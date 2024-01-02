@@ -6,7 +6,7 @@ const Frontal = () => {
     <div
       className="relative  h-[653px]  "
       style={{
-        backgroundColor: "rgba(8, 8, 8, 0.30)",
+        backgroundColor: "rgba(8, 8, 8, 0.50)",
       }}
     >
       <FrontalContent />
