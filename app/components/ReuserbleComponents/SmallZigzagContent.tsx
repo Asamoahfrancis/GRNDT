@@ -87,7 +87,7 @@ const SmallZigzagContent = () => {
         <Button
           variant="text"
           endIcon={<ArrowRightAltIcon />}
-          className="  bg-gradient-green mt-10 hover:bg-none hover:border-solid hover:border text-white"
+          className="hover:text-lightRadientGreen  bg-gradient-green mt-10 hover:bg-none hover:border-solid hover:border text-white"
         >
           ALL SERVICES
         </Button>

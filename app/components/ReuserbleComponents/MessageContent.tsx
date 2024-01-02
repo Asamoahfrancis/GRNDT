@@ -26,7 +26,7 @@ const MessageContent = () => {
           <Button
             variant="text"
             endIcon={<ArrowRightAltIcon />}
-            className="  hover:bg-gradient-green px-8 text-center border-[1px] border-solid border-darkGreen  text-darkGreen"
+            className=" hover:text-white hover:bg-gradient-green px-8 text-center border-[1px] border-solid border-darkGreen  text-darkGreen"
           >
             About Us
           </Button>
@@ -62,7 +62,7 @@ const MessageContent = () => {
               <Button
                 variant="text"
                 endIcon={<ArrowRightAltIcon />}
-                className="  hover:text-white hover:bg-none text-white bg-gradient-green px-8 text-center border-[1px] border-solid border-darkGreen "
+                className="  text-white hover:text-lightRadientGreen hover:bg-none  bg-gradient-green px-8 text-center border-[1px] border-solid border-darkGreen "
               >
                 SEND MESSAGE{" "}
               </Button>
