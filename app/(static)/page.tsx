@@ -11,7 +11,6 @@ import Footer from "../components/ReuserbleComponents/Footer";
 const Home = () => {
   return (
     <div>
-      <NavBar />
       <Frontal />
       <Zigzag />
       <ServicesSection />
@@ -19,7 +18,6 @@ const Home = () => {
       <Testimonies />
       <Trustedcustomers />
       <MessageUsSection />
-      <Footer />
     </div>
   );
 };

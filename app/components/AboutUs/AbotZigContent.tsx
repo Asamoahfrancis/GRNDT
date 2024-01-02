@@ -1,5 +1,5 @@
 import React from "react";
-import ServiceCard from "./ServiceCard";
+import ServiceCard from "../ReuserbleComponents/ServiceCard";
 import { Button } from "@mui/material";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
@@ -20,29 +20,28 @@ const serviceData = [
     id: "s3",
     title: "User Experience Design",
     data: `We engage in user research
-    and meticulously synthesize
-    the findings, transforming
-    them into clear user flows,
-    information architectures,
-    and interaction prototypes.`,
+      and meticulously synthesize
+      the findings, transforming
+      them into clear user flows,
+      information architectures,
+      and interaction prototypes.`,
     logo: "/monitor.png",
   },
   {
     id: "s4",
     title: "Web Hosting",
     data: `We provide budget-friendly,
-    optimized, secure, and fast web
-    hosting services for websites
-    and applications, ensuring a
-    99% uptime to support the
-    growth of your business.`,
+      optimized, secure, and fast web
+      hosting services for websites
+      and applications, ensuring a
+      99% uptime to support the
+      growth of your business.`,
     logo: "/cloud-connection.png",
   },
 ];
-
-const ServicesSection = () => {
+const AbotZigContent = () => {
   return (
-    <section className="px-[50px] text-center mb-20 ">
+    <section className="px-[50px] absolute top-[20%] left-0 text-center mb-20 ">
       <div className="  ">
         <p className="text-center text-sm text-textColor ">OUR SERVICES</p>
         <p className="text-center text-[30px]  text-lightRadientGreen">
@@ -73,4 +72,4 @@ const ServicesSection = () => {
   );
 };
 
-export default ServicesSection;
+export default AbotZigContent;

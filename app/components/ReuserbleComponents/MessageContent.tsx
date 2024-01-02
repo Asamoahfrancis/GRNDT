@@ -28,7 +28,7 @@ const MessageContent = () => {
             endIcon={<ArrowRightAltIcon />}
             className=" hover:text-white hover:bg-gradient-green px-8 text-center border-[1px] border-solid border-darkGreen  text-darkGreen"
           >
-            About Us
+            Contact Us
           </Button>
         </div>
       </div>
