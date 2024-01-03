@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Zigzagcontent from "../ReuserbleComponents/Zigzagcontent";
 import AbotZigContent from "./AbotZigContent";
 const AboutServices = () => {
   return (

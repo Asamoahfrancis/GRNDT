@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import AboutFrontalContent from "./AboutFrontalContent";
-const AboutFrontal = ({ data }: { data: string }) => {
+import ConatctMessageContent from "./ContactMessageContent";
+const ContactmessageSection = () => {
   return (
-    <div className="relative  h-[240px] flex justify-center items-center ">
-      <AboutFrontalContent data={data} />
+    <div className="relative  h-[653px] ">
+      <ConatctMessageContent />
       <Image
-        src="/aboutus.png"
+        src="/nice.png"
         alt="Picture of the author"
         sizes="100vw"
         quality={100}
@@ -20,4 +20,4 @@ const AboutFrontal = ({ data }: { data: string }) => {
   );
 };
 
-export default AboutFrontal;
+export default ContactmessageSection;

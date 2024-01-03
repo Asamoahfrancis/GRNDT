@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-const AboutFrontalContent = () => {
+const AboutFrontalContent = ({ data }: { data: string }) => {
   return (
     <div className=" w-[80%] flex justify-center h-[200px] relative">
-      <p className="text-[90px] text-center mt-5 text-lightRadientGreen">
-        About Us
+      <p className="text-[50px] text-center mt-5 text-lightRadientGreen">
+        {data}
       </p>
       <Image
         src="/aboutPringles.png"

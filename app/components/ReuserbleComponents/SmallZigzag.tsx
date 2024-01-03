@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Zigzagcontent from "./Zigzagcontent";
 import SmallZigzagContent from "./SmallZigzagContent";
 const SmallZigzag = () => {
   return (

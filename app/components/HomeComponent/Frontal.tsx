@@ -14,7 +14,6 @@ const Frontal = () => {
         src="/FrontalImage.png"
         alt="Picture of the author"
         sizes="100vw"
-        quality={100}
         fill
         style={{
           objectFit: "cover",

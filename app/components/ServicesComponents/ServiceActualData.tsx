@@ -1,5 +1,5 @@
-import React, { FC } from "react";
-import ServiceCard from "./ServiceCard";
+import React from "react";
+import ServiceActualDataCard from "./ServiceActualDataCard";
 import { Button } from "@mui/material";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 const serviceData = [
@@ -31,6 +31,18 @@ const serviceData = [
   },
   {
     id: "s4",
+    title: "User Interface Design",
+    data: `We thoughtfully apply color theory,
+    typography, and visual aesthetics to
+    craft high-quality mockups, graphics,
+    layouts, wireframes, and
+    prototypes.`,
+    logo: "/monitor.png",
+    links: "/user-interface",
+  },
+
+  {
+    id: "s5",
     title: "Web Hosting",
     data: `We provide budget-friendly,
     optimized, secure, and fast web
@@ -42,18 +54,18 @@ const serviceData = [
     links: "/web-hosting",
   },
 ];
-const ServicesSection = () => {
+const ServicesActualSection = () => {
   return (
     <section className="px-[50px] text-center mb-20 ">
-      <div className="  ">
+      <div className="  my-20">
         <p className="text-center text-sm text-textColor ">OUR SERVICES</p>
         <p className="text-center text-[30px]  text-lightRadientGreen">
           Explore Our Services
         </p>
       </div>
-      <div className="grid grid-cols-4 gap-2 text-base ">
+      <div className=" flex flex-wrap justify-center gap-4 text-base ">
         {serviceData.map((service: any) => (
-          <ServiceCard
+          <ServiceActualDataCard
             key={service.id}
             title={service.title}
             logo={service.logo}
@@ -76,4 +88,4 @@ const ServicesSection = () => {
   );
 };
 
-export default ServicesSection;
+export default ServicesActualSection;

@@ -23,7 +23,7 @@ const FrontalContent = () => {
           <Button
             variant="text"
             endIcon={<ArrowRightAltIcon />}
-            className="border border-solid hover:bg-gradient-green hover:border-none text-white"
+            className="border  border-solid hover:bg-gradient-green hover:border-none text-white"
           >
             Get in Touch
           </Button>

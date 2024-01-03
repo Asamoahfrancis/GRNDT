@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Button } from "@mui/material";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
-const ServiceCard = ({
+const ServiceActualDataCard = ({
   title,
   data,
   logo,
@@ -15,7 +15,7 @@ const ServiceCard = ({
   links: string;
 }) => {
   return (
-    <section className=" py-4 px-2 bg-gradient-service  rounded-md">
+    <section className=" basis-[30%] py-4 px-2 bg-gradient-service  rounded-md">
       <div className=" text-textColor flex flex-col bg-white h-[300px] shadow-sm pb-4  rounded-md  px-2">
         <div className="flex justify-center mt-4">
           <Image
@@ -30,8 +30,8 @@ const ServiceCard = ({
         <div>
           <Button
             variant="text"
-            href={links}
             size="small"
+            href={links}
             endIcon={<ArrowRightAltIcon />}
             className="px-8 hover:text-white  hover:bg-gradient-green  border-[1px]  border-solid border-darkGreen  text-darkGreen"
           >
@@ -43,4 +43,4 @@ const ServiceCard = ({
   );
 };
 
-export default ServiceCard;
+export default ServiceActualDataCard;

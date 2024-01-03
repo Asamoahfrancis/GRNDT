@@ -1,36 +1,37 @@
 import { Button } from "@mui/material";
 import React from "react";
-import Image from "next/image";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import TextField from "@mui/material/TextField";
-import { createTheme } from "@mui/material/styles";
 
-const MessageContent = () => {
+const ConatctMessageContent = () => {
   return (
-    <div className="px-[50px]  grid grid-cols-2 place-content-center min-h-[500px] p-2">
-      <div className=" flex flex-col justify-center ">
-        <p className="text-xs text-textColor mb-4 tracking-widest ">
-          GET IN TOUCH NOW
-        </p>
-        <p className="text-[30px] leading-4 text-lightRadientGreen">
-          Feel free to reach out to us for{" "}
-        </p>
-        <p className="text-[30px]  text-lightRadientGreen">
-          any additional information.{" "}
-        </p>
-        <p className=" my-6 text-textColor w-4/6">
-          Ready to elevate your online presence to new heights? Reach out to us
-          today, and let our expert team guide you towards achieving your goals.
-        </p>
-        <div className="w-full text-center">
-          <Button
-            variant="text"
-            endIcon={<ArrowRightAltIcon />}
-            className=" hover:text-white hover:bg-gradient-green px-8 text-center border-[1px] border-solid border-darkGreen  text-darkGreen"
-          >
-            Contact Us
-          </Button>
-        </div>
+    <div className="px-[50px] grid grid-cols-2 place-content-center min-h-[500px] gap-6 p-2 ">
+      <div className="  pl-16 s  mt-10 bg-gradient-green text-white rounded-md ">
+        <section className="w-[90%] flex flex-col gap-4 h-full justify-between   py-2  ">
+          <div className="text-[30px] mt-2">Get in touch</div>
+          <div>
+            <p className="font-[500]">Visit us</p>
+            <p className="text-xs">Come and say hello at our office</p>
+            <p className="font-[600]">8th Link Road, Spintex, Accra. </p>
+          </div>
+          <div>
+            <p className="font-[500]">Chat with us</p>
+            <p>Our friendly team is here to help.</p>
+            <p className="font-[600]">info@grndt.com </p>
+          </div>
+          <div>
+            <p className="font-[500]">Call us</p>
+            <p>
+              Our team is ready to attend to your inquiries and requirements.
+            </p>
+            <p className="font-[600]">+233 54 323 5217 </p>
+          </div>
+          <div>
+            <p className="font-[500]">Work hours</p>
+            <p>We are ready to serve you from</p>
+            <p className="font-[600]">Sun-Fri from 8:00AM-5:00PM </p>
+          </div>
+        </section>
       </div>
       <div className=" flex justify-center items-center mt-10 bg-white rounded-md opacity-95">
         <section className="w-[90%] pb-4">
@@ -42,7 +43,7 @@ const MessageContent = () => {
               id="outlined-basic"
               label="Enter Your Name"
               variant="outlined"
-              className="bg-[#E3E3E3]  opacity-40"
+              className="bg-[#E3E3E3]  opacity-40 "
             />
             <TextField
               id="outlined-basic"
@@ -74,4 +75,4 @@ const MessageContent = () => {
   );
 };
 
-export default MessageContent;
+export default ConatctMessageContent;
