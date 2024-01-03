@@ -106,11 +106,11 @@ const UserInterfaceContent = () => {
                 Design System and UI Libraries:{" "}
               </span>
               To ensure consistency and scalability, we create design systems
-              and UI libraries that form the bedrock of your digital product's
-              UI design. These resources encompass reusable UI components, style
-              guides, and guidelines, aiding in the maintenance of brand
-              consistency, streamlining design processes, and fostering
-              collaboration.
+              and UI libraries that form the bedrock of your digital
+              product&apos;s UI design. These resources encompass reusable UI
+              components, style guides, and guidelines, aiding in the
+              maintenance of brand consistency, streamlining design processes,
+              and fostering collaboration.
             </li>
             <li>
               <span className=" text-lightRadientGreen">

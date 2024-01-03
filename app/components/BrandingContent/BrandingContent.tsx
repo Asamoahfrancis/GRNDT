@@ -25,7 +25,7 @@ const BrandingContent = () => {
               We initiate the process by comprehending your business goals,
               target audience, and market landscape. Our brand strategists
               conduct in-depth research and analysis to formulate a
-              comprehensive brand strategy that delineates your brand's
+              comprehensive brand strategy that delineates your brand&apos;s
               positioning, values, personality, and unique selling propositions.
               This strategic framework serves as a guiding beacon for all
               brand-related activities.
@@ -47,12 +47,12 @@ const BrandingContent = () => {
                 {" "}
                 Brand Messaging and Voice:{" "}
               </span>
-              We assist in shaping your brand's voice and crafting compelling
-              messaging that conveys your brand's values, benefits, and
-              narrative. Through the collaboration of our copywriters and brand
-              strategists, we develop persuasive brand messaging that resonates
-              with your audience and effectively communicates your brand's
-              unique value proposition.
+              We assist in shaping your brand&apos;s voice and crafting
+              compelling messaging that conveys your brand&apos;s values,
+              benefits, and narrative. Through the collaboration of our
+              copywriters and brand strategists, we develop persuasive brand
+              messaging that resonates with your audience and effectively
+              communicates your brand&apos;s unique value proposition.
             </li>
             <li>
               <span className=" text-lightRadientGreen">
@@ -66,13 +66,11 @@ const BrandingContent = () => {
               consistent and accurate representation of your brand.
             </li>
             <li>
-              <span className=" text-lightRadientGreen">
-                Brand Collateral:{" "}
-              </span>
+              <span className=" text-lightRadientGreen">Brand Collateral:</span>
               We craft diverse brand collateral, encompassing business cards,
               letterheads, brochures, presentations, and various marketing
               materials. Our designers skillfully create visually striking and
-              on-brand collateral, reinforcing your brand's identity and
+              on-brand collateral, reinforcing your brand&apos;s identity and
               elevating your overall brand perception.
             </li>
             <li>
@@ -96,10 +94,10 @@ const BrandingContent = () => {
               </span>
               We assist in energizing your brand through the creation of
               strategic marketing campaigns and initiatives, amplifying your
-              brand's reach and captivating your target audience. From digital
-              advertising and social media campaigns to content marketing and
-              influencer partnerships, we execute marketing strategies aligned
-              with your brand's identity and objectives.
+              brand&apos;s reach and captivating your target audience. From
+              digital advertising and social media campaigns to content
+              marketing and influencer partnerships, we execute marketing
+              strategies aligned with your brand&apos;s identity and objectives.
             </li>
             <li>
               <span className=" text-lightRadientGreen">
@@ -107,11 +105,11 @@ const BrandingContent = () => {
                 Brand Monitoring and Management:{" "}
               </span>
               Establishing a robust brand necessitates continuous monitoring and
-              management. We aid in overseeing your brand's reputation, tracking
-              mentions, and analyzing customer feedback to guarantee a positive
-              and consistent brand perception aligned with your brand values.
-              Additionally, we offer guidance on brand management strategies to
-              safeguard and fortify your brand over time.
+              management. We aid in overseeing your brand&apos;s reputation,
+              tracking mentions, and analyzing customer feedback to guarantee a
+              positive and consistent brand perception aligned with your brand
+              values. Additionally, we offer guidance on brand management
+              strategies to safeguard and fortify your brand over time.
             </li>
           </ul>
         </section>

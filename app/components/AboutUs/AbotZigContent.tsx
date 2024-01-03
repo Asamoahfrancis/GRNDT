@@ -9,12 +9,14 @@ const serviceData = [
     title: "Software Development",
     data: "Employing top-tier web and mobile development tools and languages, we engineer flawless and user-friendly websites and web applications tailored for our clients.",
     logo: "/code-circle.png",
+    links: "/software-development",
   },
   {
     id: "s2",
     title: "Branding",
     data: "We create visually striking logos and websites, while executing impactful digital marketing campaigns to unleash the full potential of your business.",
     logo: "/ranking.png",
+    links: "/branding",
   },
   {
     id: "s3",
@@ -26,6 +28,7 @@ const serviceData = [
       information architectures,
       and interaction prototypes.`,
     logo: "/monitor.png",
+    links: "/user-experience",
   },
   {
     id: "s4",
@@ -37,6 +40,7 @@ const serviceData = [
       99% uptime to support the
       growth of your business.`,
     logo: "/cloud-connection.png",
+    links: "/web-hosting",
   },
 ];
 const AbotZigContent = () => {
@@ -55,6 +59,7 @@ const AbotZigContent = () => {
             title={service.title}
             logo={service.logo}
             data={service.data}
+            links={service.links}
           />
         ))}
       </div>
