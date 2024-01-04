@@ -17,12 +17,14 @@ const SmallZigzagContent = () => {
           <Button
             variant="text"
             size="small"
+            href="/"
             className=" text-[12px]  bg-gradient-green md:px-8  border-[1px] border-solid bg-white border-lightRadientGreen  text-white"
           >
             All
           </Button>
           <Button
             variant="text"
+            href="/branding"
             size="small"
             className="  hover:bg-gradient-green md:px-8  hover:text-white  bg-white border-[1px] border-solid border-lightRadientGreen  text-lightRadientGreen"
           >

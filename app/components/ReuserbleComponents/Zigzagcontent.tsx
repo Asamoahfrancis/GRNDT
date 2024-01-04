@@ -46,6 +46,7 @@ const Zigzagcontent = () => {
           <div>
             <Button
               variant="text"
+              href="/about-us"
               endIcon={<ArrowRightAltIcon />}
               className=" hover:text-white px-8 hover:bg-gradient-green  border-[1px] border-solid border-darkGreen  text-darkGreen"
             >
@@ -85,6 +86,7 @@ const Zigzagcontent = () => {
           <div>
             <Button
               variant="text"
+              href="/contact-us"
               endIcon={<ArrowRightAltIcon />}
               className=" hover:text-white px-8 hover:bg-gradient-green my-3  border-[1px] border-solid border-darkGreen  text-darkGreen"
             >
