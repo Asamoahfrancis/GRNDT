@@ -1,18 +1,40 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 const DigitalAgency = () => {
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 0
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", handleResize);
+
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
+  }, []);
   return (
-    <div>
+    <div className=" text-textColor">
       <section className="text-center mt-20">
-        <p className="text-sm text-textColor">ABOUT OUR COMPANY</p>
-        <p className="text-[30px] text-lightRadientGreen">
+        <p className="text-sm text-textColor text-[20px] my-4 md:my-0 tracking-widest">
+          ABOUT OUR COMPANY
+        </p>
+        <p className="md:text-[30px] text-[25px] text-lightRadientGreen">
           We Are A Digital Agency
         </p>
       </section>
-      <section className="grid grid-cols-2 px-[50px] mt-20">
-        <div>
-          <p className="mt-8 text-lightRadientGreen">About Us</p>
-          <p className=" my-6 text-textColor ">
+      <section className="grid grid-col-1 md:grid-cols-2 md:px-[50px] mt-20">
+        <div className="order-last md:order-first px-[10px]">
+          <p className="mt-8 text-lightRadientGreen text-2xl px-2 md:px-0">
+            About Us
+          </p>
+          <p className=" my-6 text-textColor px-2 md:px-0">
             Founded in 2020 amidst the challenges of the Covid-19 pandemic,
             <span className="text-lightRadientGreen">GRNDT</span> has thrived
             over the years, developing digital solutions seamlessly woven into
@@ -32,18 +54,19 @@ const DigitalAgency = () => {
             alt="Picture of the author"
             sizes="100vw"
             style={{
-              width: "60%",
+              width: "100%",
               height: "auto",
+              ...(windowWidth >= 768 && { width: "60%" }),
             }}
             width={500}
             height={300}
           />
         </div>
       </section>
-      <section className="px-[50px] my-10 ">
+      <section className="md:px-[50px] my-10 ">
         <p className="text-center  text-lightRadientGreen">Our Vision</p>
         <div className="grid place-items-center">
-          <p className="text-center w-[70%]">
+          <p className="text-center md:w-[70%] px-2 md:px-0">
             <span className=" text-lightRadientGreen">GRNDT</span> aspires to
             emerge as a leading technology and design firm, earning the trust of
             companies within and beyond Ghana. Our goal is to establish a
@@ -52,10 +75,10 @@ const DigitalAgency = () => {
           </p>
         </div>
       </section>
-      <section className="px-[50px] my-10 ">
+      <section className="md:px-[50px] my-10 ">
         <p className="text-center  text-lightRadientGreen">Our Mission</p>
         <div className="grid place-items-center">
-          <p className="text-center w-[70%]">
+          <p className="text-center md:w-[70%] px-2 md:px-0">
             <span className=" text-lightRadientGreen">GRNDT</span> At GRNDT, our
             mission is to develop software solutions that have a direct impact
             on our economy. We are dedicated to enhancing the efficiency and

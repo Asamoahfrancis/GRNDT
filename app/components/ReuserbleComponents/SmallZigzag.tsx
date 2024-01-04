@@ -3,7 +3,7 @@ import Image from "next/image";
 import SmallZigzagContent from "./SmallZigzagContent";
 const SmallZigzag = () => {
   return (
-    <div className="relative z-[50]">
+    <div className="relative    h-full md:z-[50]">
       <Image
         src="/smallzig.png"
         alt="Picture of the author"
@@ -12,6 +12,7 @@ const SmallZigzag = () => {
           width: "100%",
           height: "auto",
         }}
+        className="absolute md:static top-0 left-0 -z-30"
         width={500}
         height={300}
       />

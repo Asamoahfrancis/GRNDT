@@ -2,11 +2,11 @@ import React from "react";
 import Image from "next/image";
 const Trustedcustomers = () => {
   return (
-    <div className="bg-black mt-20 text-white px-10 py-4">
-      <p className="text-[30px]  text-center">
+    <div className="bg-black  md:mt-20 text-white md:px-10 py-4">
+      <p className="md:text-[30px] text-[20px] py-10 text-center">
         Our Porfolio of Trusted Customers
       </p>
-      <section className="grid grid-cols-7   py-5 place-items-center">
+      <section className="md:grid grid-cols-7  flex-nowrap overflow-x-scroll gap-4 flex md:py-5 place-items-center">
         <Image
           src="/KNVAS.png"
           width={134}

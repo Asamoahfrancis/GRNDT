@@ -1,8 +1,8 @@
 import AboutFrontal from "@/app/components/AboutUs/AboutFrontal";
-import MessageUsSection from "@/app/components/ReuserbleComponents/MessageUsSection";
 import UserExperience from "@/app/components/UserExperince/UserExperience";
 import UserExperienceContent from "@/app/components/UserExperince/UserExperienceContent";
 import React from "react";
+import MessageUsSection from "../../components/ReuserbleComponents/MessageUsSection";
 
 const UserExperinces = () => {
   return (

@@ -1,15 +1,16 @@
 import AboutFrontal from "@/app/components/AboutUs/AboutFrontal";
-import MessageUsSection from "@/app/components/ReuserbleComponents/MessageUsSection";
 import UserExperience from "@/app/components/UserExperince/UserExperience";
-import UserInterfaceContent from "@/app/components/UserInterface/UserInterfaceContent";
 import WebHostingContent from "@/app/components/WebHosting/WebHostingContent";
 import React from "react";
+import MessageUsSection from "../../components/ReuserbleComponents/MessageUsSection";
 
 const WebHosting = () => {
   return (
     <div>
       <AboutFrontal data={"Web Hosting"} />
-      <UserExperience picsource={"/userInter.png"} />
+      <div className="my-10 md:my-0">
+        <UserExperience picsource={"/webhosting.png"} />
+      </div>
       <WebHostingContent />
       <MessageUsSection />
     </div>

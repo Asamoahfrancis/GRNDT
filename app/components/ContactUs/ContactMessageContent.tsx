@@ -5,7 +5,7 @@ import TextField from "@mui/material/TextField";
 
 const ConatctMessageContent = () => {
   return (
-    <div className="px-[50px] grid grid-cols-2 place-content-center min-h-[500px] gap-6 p-2 ">
+    <div className="md:px-[50px] px-[10px] grid grid-cols-1 md:grid-cols-2 place-content-center min-h-[500px] gap-6 p-2 ">
       <div className="  pl-16 s  mt-10 bg-gradient-green text-white rounded-md ">
         <section className="w-[90%] flex flex-col gap-4 h-full justify-between   py-2  ">
           <div className="text-[30px] mt-2">Get in touch</div>
@@ -35,7 +35,7 @@ const ConatctMessageContent = () => {
       </div>
       <div className=" flex justify-center items-center mt-10 bg-white rounded-md opacity-95">
         <section className="w-[90%] pb-4">
-          <form action="" className="flex flex-col gap-4">
+          <form action="" className="flex flex-col  gap-4">
             <p className="text-[30px] py-2  text-lightRadientGreen">
               Send A Message
             </p>

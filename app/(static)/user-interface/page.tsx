@@ -1,14 +1,16 @@
 import AboutFrontal from "@/app/components/AboutUs/AboutFrontal";
-import MessageUsSection from "@/app/components/ReuserbleComponents/MessageUsSection";
 import UserExperience from "@/app/components/UserExperince/UserExperience";
 import UserInterfaceContent from "@/app/components/UserInterface/UserInterfaceContent";
 import React from "react";
+import MessageUsSection from "../../components/ReuserbleComponents/MessageUsSection";
 
 const UserInterface = () => {
   return (
     <div>
       <AboutFrontal data={"User Interface Design"} />
-      <UserExperience picsource={"/userInter.png"} />
+      <div className="my-10">
+        <UserExperience picsource={"/userInter.png"} />
+      </div>
       <UserInterfaceContent />
       <MessageUsSection />
     </div>

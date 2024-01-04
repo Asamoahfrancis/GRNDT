@@ -44,14 +44,16 @@ const serviceData = [
 ];
 const ServicesSection = () => {
   return (
-    <section className="px-[50px] text-center mb-20 ">
-      <div className="  ">
-        <p className="text-center text-sm text-textColor ">OUR SERVICES</p>
-        <p className="text-center text-[30px]  text-lightRadientGreen">
+    <section className="px-[50px]   text-center md:mb-20 ">
+      <div className="py-6 md:py-0 my-6 md:my-6">
+        <p className="text-center text-sm text-textColor my-2 md:my-0">
+          OUR SERVICES
+        </p>
+        <p className="text-center md:text-[30px]    text-lightRadientGreen">
           Explore Our Services
         </p>
       </div>
-      <div className="grid grid-cols-4 gap-2 text-base ">
+      <div className=" grid grid-col-1 md:grid-cols-4 gap-2 text-base ">
         {serviceData.map((service: any) => (
           <ServiceCard
             key={service.id}
@@ -63,11 +65,11 @@ const ServicesSection = () => {
         ))}
       </div>
 
-      <div>
+      <div className="my-10 md:my-0">
         <Button
           variant="text"
           endIcon={<ArrowRightAltIcon />}
-          className="  bg-gradient-green mt-10 hover:border-lightRadientGreen hover:text-lightRadientGreen hover:bg-none hover:border-solid hover:border text-white"
+          className="  bg-gradient-green md:mt-10 hover:border-lightRadientGreen hover:text-lightRadientGreen hover:bg-none hover:border-solid hover:border text-white"
         >
           ALL SERVICES
         </Button>

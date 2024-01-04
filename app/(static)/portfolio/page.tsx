@@ -1,8 +1,11 @@
 import AboutFrontal from "@/app/components/AboutUs/AboutFrontal";
 import PortfolioSection from "@/app/components/Portfolio/PortfolioSection";
-import MessageUsSection from "@/app/components/ReuserbleComponents/MessageUsSection";
 import React from "react";
+import dynamic from "next/dynamic";
 
+const MessageUsSection = dynamic(
+  () => import("../../components/ReuserbleComponents/MessageUsSection")
+);
 const Page = () => {
   return (
     <>

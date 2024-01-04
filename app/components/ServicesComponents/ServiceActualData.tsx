@@ -56,14 +56,14 @@ const serviceData = [
 ];
 const ServicesActualSection = () => {
   return (
-    <section className="px-[50px] text-center mb-20 ">
+    <section className="md:px-[50px] text-center mb-20 ">
       <div className="  my-20">
         <p className="text-center text-sm text-textColor ">OUR SERVICES</p>
         <p className="text-center text-[30px]  text-lightRadientGreen">
           Explore Our Services
         </p>
       </div>
-      <div className=" flex flex-wrap justify-center gap-4 text-base ">
+      <div className=" md:flex px-[10px] grid grid-cols-1 gap-4 flex-wrap justify-center text-base ">
         {serviceData.map((service: any) => (
           <ServiceActualDataCard
             key={service.id}

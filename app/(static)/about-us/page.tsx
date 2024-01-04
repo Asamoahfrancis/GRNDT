@@ -1,10 +1,13 @@
 import AboutFrontal from "@/app/components/AboutUs/AboutFrontal";
 import AboutServices from "@/app/components/AboutUs/AboutServices";
 import DigitalAgency from "@/app/components/AboutUs/DigitalAgency";
-import MessageUsSection from "@/app/components/ReuserbleComponents/MessageUsSection";
 import Testimonies from "@/app/components/ReuserbleComponents/Testimonies";
 import React from "react";
+import dynamic from "next/dynamic";
 
+const MessageUsSection = dynamic(
+  () => import("../../components/ReuserbleComponents/MessageUsSection")
+);
 const Aboutus = () => {
   return (
     <div>

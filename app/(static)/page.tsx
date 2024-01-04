@@ -5,8 +5,11 @@ import ServicesSection from "../components/ReuserbleComponents/ServicesSection";
 import SmallZigzag from "../components/ReuserbleComponents/SmallZigzag";
 import Testimonies from "../components/ReuserbleComponents/Testimonies";
 import Trustedcustomers from "../components/ReuserbleComponents/Trustedcustomers";
-import MessageUsSection from "../components/ReuserbleComponents/MessageUsSection";
+import dynamic from "next/dynamic";
 
+const MessageUsSection = dynamic(
+  () => import("../components/ReuserbleComponents/MessageUsSection")
+);
 const serviceData = [
   {
     id: "s1",

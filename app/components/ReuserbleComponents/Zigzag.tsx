@@ -16,6 +16,7 @@ const Zigzag = () => {
         }}
         width={500}
         height={300}
+        className="absolute md:static top-0 left-0 -z-30"
       />
       <Zigzagcontent />
     </div>

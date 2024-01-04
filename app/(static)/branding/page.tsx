@@ -1,15 +1,16 @@
 import AboutFrontal from "@/app/components/AboutUs/AboutFrontal";
 import BrandingContent from "@/app/components/BrandingContent/BrandingContent";
-import MessageUsSection from "@/app/components/ReuserbleComponents/MessageUsSection";
 import UserExperience from "@/app/components/UserExperince/UserExperience";
-import UserInterfaceContent from "@/app/components/UserInterface/UserInterfaceContent";
 import React from "react";
+import MessageUsSection from "../../components/ReuserbleComponents/MessageUsSection";
 
 const Branding = () => {
   return (
     <div>
       <AboutFrontal data={"Branding"} />
-      <UserExperience picsource={"/userInter.png"} />
+      <div className="my-10 md:my-0">
+        <UserExperience picsource={"/Branding.png"} />
+      </div>
       <BrandingContent />
       <MessageUsSection />
     </div>

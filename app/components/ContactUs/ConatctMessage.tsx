@@ -3,7 +3,7 @@ import Image from "next/image";
 import ConatctMessageContent from "./ContactMessageContent";
 const ContactmessageSection = () => {
   return (
-    <div className="relative  h-[653px] ">
+    <div className="relative  md:h-[653px] ">
       <ConatctMessageContent />
       <Image
         src="/nice.png"

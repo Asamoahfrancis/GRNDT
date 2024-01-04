@@ -2,8 +2,7 @@ import React from "react";
 const WebHostingContent = () => {
   return (
     <div>
-      <div className="px-[50px]">
-        <p className=" text-sm text-textColor">Web Hosting</p>
+      <div className="px-[10px] md:px-[50px]">
         <p className="text-lightRadientGreen text-[30px]">Web Hosting </p>
         <p className="text-sm text-textColor">
           We recognize the significance of a resilient and secure web hosting
@@ -13,7 +12,7 @@ const WebHostingContent = () => {
           foundation for your online presence.
         </p>
       </div>
-      <section className=" my-10 mb-20 px-[100px]">
+      <section className=" my-10 mb-20 px-[10px] md:px-[100px]">
         <h1 className=" text-lightRadientGreen text-xl">
           Our Web Hosting Services{" "}
         </h1>

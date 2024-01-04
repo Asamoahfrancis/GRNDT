@@ -45,14 +45,16 @@ const serviceData = [
 ];
 const AbotZigContent = () => {
   return (
-    <section className="px-[50px] absolute top-[20%] left-0 text-center mb-20 ">
-      <div className="  ">
-        <p className="text-center text-sm text-textColor ">OUR SERVICES</p>
-        <p className="text-center text-[30px]  text-lightRadientGreen">
+    <section className="md:px-[50px] md:absolute top-[20%] left-0 text-center mb-20 ">
+      <div className="py-10 md:py-0">
+        <p className="text-center text-xl md:text-sm text-textColor md:pt-0 tracking-widest md:tracking-normal pt-10 ">
+          OUR SERVICES
+        </p>
+        <p className="text-center text-[25px] md:text-[30px]  text-lightRadientGreen">
           Explore Our Services
         </p>
       </div>
-      <div className="grid grid-cols-4 gap-2 text-base ">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-2 text-base px-[10px] md:px-0 ">
         {serviceData.map((service) => (
           <ServiceCard
             key={service.id}

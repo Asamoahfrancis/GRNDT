@@ -1,17 +1,36 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 const SoftwareDigital = () => {
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 0
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", handleResize);
+
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
+  }, []);
+
   return (
     <div>
-      <section className="grid grid-cols-2 px-[50px] mt-20">
-        <div className="text-sm">
+      <section className="grid grid-cols-1 md:grid-cols-2 px-[10px] md:px-[50px] mt-20">
+        <div className="text-sm order-last md:order-first">
           <p className="mt-8 text-textColor mb-3 text-sm">
             SOFTWARE DEVELOPMENT
           </p>
           <p className="text-[30px] text-lightRadientGreen">
             Software Development
           </p>
-          <div>
+          <div className="text-textColor">
             <p className=" my-6 text-textColor ">
               At <span className="text-lightRadientGreen">GRNDT</span>, We
               specialize in delivering premier software development solutions
@@ -45,15 +64,16 @@ const SoftwareDigital = () => {
             alt="Picture of the author"
             sizes="100vw"
             style={{
-              width: "60%",
+              width: "90%",
               height: "auto",
+              ...(windowWidth >= 768 && { width: "60%" }),
             }}
             width={500}
             height={300}
           />
         </div>
       </section>
-      <section className=" my-10 mb-20 px-[100px]">
+      <section className=" my-10 mb-20 md:px-[100px] px-[10px]">
         <h1 className=" text-lightRadientGreen text-xl">
           Our Software Development Services
         </h1>

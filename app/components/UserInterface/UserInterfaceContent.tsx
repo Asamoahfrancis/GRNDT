@@ -2,9 +2,8 @@ import React from "react";
 const UserInterfaceContent = () => {
   return (
     <div>
-      <div className="px-[50px]">
-        <p className=" text-sm text-textColor">User Interface Design</p>
-        <p className="text-lightRadientGreen text-[30px]">
+      <div className="px-[10px] md:px-[50px]">
+        <p className="text-lightRadientGreen text-[20px] my-5 md:my-0 md:text-[30px]">
           User Interface Design{" "}
         </p>
         <p className="text-sm text-textColor">
@@ -16,7 +15,7 @@ const UserInterfaceContent = () => {
           audience.
         </p>
       </div>
-      <section className=" my-10 mb-20 px-[100px]">
+      <section className=" my-10 mb-20 md:px-[100px] px-[10px]">
         <h1 className=" text-lightRadientGreen text-xl">
           Our User Interface Design Services{" "}
         </h1>

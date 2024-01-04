@@ -3,8 +3,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-black  text-textColor ">
-      <section className="grid grid-cols-4 px-[50px] py-6 text-sm gap-6">
+    <div className="bg-black    text-textColor ">
+      <section className="grid grid-cols-1 md:grid-cols-4 md:px-[50px] px-[20px] py-6 text-base md:text-sm gap-6">
         <div>
           <p className="text-white">WE ARE GRNDT</p>
           <p className="mt-6">
@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
       </section>
       <section>
-        <p className="text-center bg-[#232323] text-white py-4 px-6">
+        <p className="md:text-center text-[14px] text-left bg-[#232323] text-white py-4 px-6">
           Copyright &copy; 2023 GRNDT. All Rights Reserved
         </p>
       </section>

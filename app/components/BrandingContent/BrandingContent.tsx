@@ -2,8 +2,7 @@ import React from "react";
 const BrandingContent = () => {
   return (
     <div>
-      <div className="px-[50px]">
-        <p className=" text-sm text-textColor">BRANDING</p>
+      <div className="md:px-[50px] px-[10px]">
         <p className="text-lightRadientGreen text-[30px]">Branding </p>
         <p className="text-sm text-textColor">
           As a top-tier digital agency, we recognize the crucial role that
@@ -14,7 +13,7 @@ const BrandingContent = () => {
           setting you apart from the competition.
         </p>
       </div>
-      <section className=" my-10 mb-20 px-[100px]">
+      <section className=" my-10 mb-20 md:px-[100px] px-[10px]">
         <h1 className=" text-lightRadientGreen text-xl">
           Our Branding Services{" "}
         </h1>

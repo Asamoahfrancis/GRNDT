@@ -3,12 +3,14 @@ import Image from "next/image";
 const SoftwareDigital = () => {
   return (
     <div>
-      <div className="px-[50px]">
-        <p className=" text-sm text-textColor">User Experience Design</p>
+      <div className="md:px-[50px] px-[10px] py-20 md:py-0">
+        <p className="tracking-widest md:text-sm text-textColor text-xl">
+          User Experience Design
+        </p>
         <p className="text-lightRadientGreen text-[30px]">
           User Experience Design
         </p>
-        <p className="text-sm text-textColor">
+        <p className="text-sm text-textColor pt-10 md:py-0">
           At <span className=" text-lightRadientGreen">GRNDT </span>, We excel
           in crafting outstanding user experiences (UX) that foster engagement,
           satisfaction, and business success. As a premier digital agency, we
@@ -18,7 +20,7 @@ const SoftwareDigital = () => {
           designers creates seamless and meaningful user experiences.
         </p>
       </div>
-      <section className=" my-10 mb-20 px-[100px]">
+      <section className=" md:my-10 mb-20 md:px-[100px] px-[5px]">
         <h1 className=" text-lightRadientGreen text-xl">
           Our User Experience Design Services{" "}
         </h1>

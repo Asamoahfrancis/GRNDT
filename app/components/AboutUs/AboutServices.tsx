@@ -12,6 +12,7 @@ const AboutServices = () => {
           width: "100%",
           height: "auto",
         }}
+        className="absolute md:static top-0 left-0 -z-30"
         width={500}
         height={300}
       />

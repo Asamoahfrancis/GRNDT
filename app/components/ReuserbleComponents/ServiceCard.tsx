@@ -16,8 +16,8 @@ const ServiceCard = ({
 }) => {
   return (
     <section className=" py-4 px-2 bg-gradient-service  rounded-md">
-      <div className=" text-textColor flex flex-col bg-white h-[300px] shadow-sm pb-4  rounded-md  px-2">
-        <div className="flex justify-center mt-4">
+      <div className=" text-textColor flex flex-col bg-white md:h-[300px] shadow-sm pb-4  rounded-md  px-2">
+        <div className="flex justify-center md:mt-4">
           <Image
             src={logo}
             width={50}

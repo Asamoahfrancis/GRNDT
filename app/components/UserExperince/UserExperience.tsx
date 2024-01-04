@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 const UserExperience = ({ picsource }: { picsource: string }) => {
   return (
-    <section className=" flex justify-center p-20 ">
-      <div className="relative w-[70%] h-[387px] ">
+    <section className=" flex justify-center md:p-20 ">
+      <div className="relative md:w-[70%] w-[95%]  md:h-[387px] h-[350px] ">
         <Image
           src={picsource}
           alt="Picture of the author"

@@ -1,7 +1,8 @@
 import AboutFrontal from "@/app/components/AboutUs/AboutFrontal";
-import MessageUsSection from "@/app/components/ReuserbleComponents/MessageUsSection";
 import SoftwareDigital from "@/app/components/SoftwareDevelopment/SoftwareDigital";
 import React from "react";
+import dynamic from "next/dynamic";
+import MessageUsSection from "../../components/ReuserbleComponents/MessageUsSection";
 
 const SoftwareDevelopment = () => {
   return (
