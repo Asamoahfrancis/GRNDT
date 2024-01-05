@@ -5,8 +5,8 @@ import TextField from "@mui/material/TextField";
 
 const MessageContent = () => {
   return (
-    <div className="md:px-[50px]  px-[10px] bg-gradient-service  grid grid-cols-1 md:grid-cols-2 place-content-center md:min-h-[500px] md:p-2">
-      <div className="mb-20 md:mb-0 mt-32 flex    flex-col justify-center ">
+    <div className="md:px-[50px]  px-[10px] bg-gradient-service md:bg-none  grid grid-cols-1 md:grid-cols-2 place-content-center md:min-h-[500px] md:p-2">
+      <div className="mb-20 md:mb-0 mt-32 flex flex-col justify-center ">
         <p className="md:text-xs tracking-widest text-textColor text-[16px]  mb-4  ">
           GET IN TOUCH NOW
         </p>

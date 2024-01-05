@@ -8,7 +8,8 @@ import Trustedcustomers from "../components/ReuserbleComponents/Trustedcustomers
 import dynamic from "next/dynamic";
 
 const MessageUsSection = dynamic(
-  () => import("../components/ReuserbleComponents/MessageUsSection")
+  () => import("../components/ReuserbleComponents/MessageUsSection"),
+  { ssr: false }
 );
 const serviceData = [
   {

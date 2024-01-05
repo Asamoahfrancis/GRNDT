@@ -3,7 +3,9 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Button } from "@mui/material";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
+import useWidth from "@/app/hook/useWidth";
 const Zigzagcontent = () => {
+  const [width] = useWidth(0);
   const [windowWidth, setWindowWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 0
   );
@@ -48,25 +50,40 @@ const Zigzagcontent = () => {
               variant="text"
               href="/about-us"
               endIcon={<ArrowRightAltIcon />}
-              className=" hover:text-white px-8 hover:bg-gradient-green  border-[1px] border-solid border-darkGreen  text-darkGreen"
+              className=" hover:text-white px-8 hover:transition  hover:duration-200 hover:ease-out hover:bg-green-500  border-[1px] border-solid border-darkGreen  text-darkGreen"
             >
               About Us
             </Button>
           </div>
         </div>
-        <div className="flex mt-12 md:mt-0 justify-center items-center">
-          <Image
-            src="/happyImage.png"
-            alt="Picture of the author"
-            sizes="100vw"
-            style={{
-              width: "90%",
-              height: "auto",
-              ...(windowWidth >= 768 && { width: "60%" }),
-            }}
-            width={500}
-            height={300}
-          />
+        <div className="flex mt-12 md:mt-0 z-50 justify-center items-center">
+          {width >= 768 ? (
+            <Image
+              src="/happyImage.png"
+              alt="Picture of the author"
+              sizes="100vw"
+              quality={100}
+              style={{
+                width: "60%",
+                height: "auto",
+              }}
+              width={500}
+              height={300}
+            />
+          ) : (
+            <Image
+              src="/happyImage.png"
+              alt="Picture of the author"
+              sizes="100vw"
+              quality={100}
+              style={{
+                width: "90%",
+                height: "auto",
+              }}
+              width={500}
+              height={300}
+            />
+          )}
         </div>
       </section>
 
@@ -88,7 +105,7 @@ const Zigzagcontent = () => {
               variant="text"
               href="/contact-us"
               endIcon={<ArrowRightAltIcon />}
-              className=" hover:text-white px-8 hover:bg-gradient-green my-3  border-[1px] border-solid border-darkGreen  text-darkGreen"
+              className=" hover:text-white my-3 px-8 hover:transition  hover:duration-200 hover:ease-out hover:bg-green-500  border-[1px] border-solid border-darkGreen  text-darkGreen"
             >
               CONTACT US
             </Button>

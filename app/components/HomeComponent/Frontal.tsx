@@ -6,7 +6,7 @@ const Frontal = () => {
     <div
       className="relative  h-[653px]  "
       style={{
-        backgroundColor: "rgba(8, 8, 8, 0.50)",
+        backgroundColor: "rgba(8, 8, 8, 0.60)",
       }}
     >
       <FrontalContent />
@@ -17,7 +17,7 @@ const Frontal = () => {
         fill
         style={{
           objectFit: "cover",
-          zIndex: "-200",
+          zIndex: "-1",
         }}
       />
     </div>

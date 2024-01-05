@@ -16,14 +16,14 @@ const FrontalContent = () => {
           <Button
             variant="text"
             endIcon={<ArrowRightAltIcon />}
-            className="  bg-gradient-green hover:bg-none hover:border-solid hover:border text-white"
+            className=" hover:delay-100 hover:transition-all hover:ease-in-out hover:duration-500 bg-green-600 hover:bg-none hover:border-solid hover:border text-white"
           >
             Learn More
           </Button>
           <Button
             variant="text"
             endIcon={<ArrowRightAltIcon />}
-            className="border  border-solid hover:bg-gradient-green hover:border-none text-white"
+            className="hover:delay-100 hover:transition-all hover:ease-in-out hover:duration-500 border  border-solid hover:bg-green-500 hover:border-none text-white"
           >
             Get in Touch
           </Button>
