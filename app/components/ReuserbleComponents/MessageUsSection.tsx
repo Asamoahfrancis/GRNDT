@@ -8,7 +8,9 @@ const MessageImageContent = dynamic(
 const MessageUsSection = () => {
   return (
     <div className="relative  md:h-[653px] ">
-      <MessageContent />
+      <div className="max-w-[1444px] mx-auto">
+        <MessageContent />
+      </div>
       <MessageImageContent />
     </div>
   );

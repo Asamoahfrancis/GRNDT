@@ -5,8 +5,8 @@ import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
 const SmallZigzagContent = () => {
   return (
-    <div className="md:absolute    md:top-[20%]  h-full left-0  w-full   md:px-[50px] ">
-      <section className=" text-center ">
+    <div className="md:absolute  md:top-[0%] lg:top-[20%]   h-full left-0  w-full  md:px-[50px] ">
+      <section className=" text-center max-w-[1444px] mx-auto ">
         <p className="   md:text-sm text-textColor    translate-y-20 md:translate-y-0  text-xl ">
           PORTFOLIO
         </p>

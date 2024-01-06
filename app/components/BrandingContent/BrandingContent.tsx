@@ -1,7 +1,7 @@
 import React from "react";
 const BrandingContent = () => {
   return (
-    <div>
+    <div className="max-w-[1444px] mx-auto">
       <div className="md:px-[50px] px-[10px]">
         <p className="text-lightRadientGreen text-[30px]">Branding </p>
         <p className="text-sm text-textColor">

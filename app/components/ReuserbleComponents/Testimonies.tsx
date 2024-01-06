@@ -1,10 +1,26 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import { TestimonialsContext } from "@/app/context/TestimoniesContext/TestimoniesContext";
+import { useContext } from "react";
 const Testimonies = () => {
+  const ctx = useContext(TestimonialsContext);
+  const [count, setCount] = useState(1);
+  const RightClick = () => {
+    setCount((prev) => prev++);
+  };
+  useEffect(() => {
+    RightClick();
+  }, [count]);
+
+  console.log(count);
   return (
-    <div className="md:px-[50px] px-[20px] md:mt-20 md:flex  justify-center">
+    <div className="md:px-[50px]  px-[20px] md:mt-20 md:flex  justify-center">
       <section className="flex items-center  md:gap-20 text-textColor">
-        <p>
+        <p
+          className="hover:rounded-full hover:p-1 cursor-pointer  hover:bg-lightRadientGreen"
+          onClick={() => ctx.LeftClick()}
+        >
           <Image
             src="/pushRight.png"
             width={40}
@@ -24,13 +40,16 @@ const Testimonies = () => {
               “You and your team are doing good work. Ill do everything I can to
               bring you more clients”
             </p>
+            <p className="md:text-xs text-base font-[500] tracking-widest md:mt-5">
+              Jonathan Kwamegah{" "}
+            </p>
+            <p className="md:text-xs text-textColor mb-6 md:mb-0">CEO KNVAS</p>
           </div>
-          <p className="md:text-xs text-base font-[500] tracking-widest md:mt-5">
-            Jonathan Kwamegah{" "}
-          </p>
-          <p className="md:text-xs text-textColor mb-6 md:mb-0">CEO KNVAS</p>
         </div>
-        <p>
+        <p
+          className="hover:rounded-full hover:p-1 cursor-pointer  hover:bg-lightRadientGreen"
+          onClick={() => RightClick()}
+        >
           <Image
             src="/pushLeft.png"
             width={40}

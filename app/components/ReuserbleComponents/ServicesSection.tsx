@@ -44,37 +44,39 @@ const serviceData = [
 ];
 const ServicesSection = () => {
   return (
-    <section className="px-[50px]   text-center md:mb-20 ">
-      <div className="py-6 md:py-0 my-6 md:my-6">
-        <p className="text-center text-sm text-textColor my-2 md:my-0">
-          OUR SERVICES
-        </p>
-        <p className="text-center md:text-[30px]    text-lightRadientGreen">
-          Explore Our Services
-        </p>
-      </div>
-      <div className=" grid grid-col-1 md:grid-cols-4 gap-2 text-base ">
-        {serviceData.map((service: any) => (
-          <ServiceCard
-            key={service.id}
-            title={service.title}
-            logo={service.logo}
-            data={service.data}
-            links={service.links}
-          />
-        ))}
-      </div>
+    <div className="w-full md:my-20 lg:my-0">
+      <section className="px-[50px]  mx-auto max-w-[1444px]  text-center md:mb-20 ">
+        <div className="py-6 md:py-0 my-6 md:my-6">
+          <p className="text-center text-sm text-textColor my-2 md:my-0">
+            OUR SERVICES
+          </p>
+          <p className="text-center lg:text-[30px]  md:text-[20px]   text-lightRadientGreen">
+            Explore Our Services
+          </p>
+        </div>
+        <div className=" grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 gap-2 text-base ">
+          {serviceData.map((service: any) => (
+            <ServiceCard
+              key={service.id}
+              title={service.title}
+              logo={service.logo}
+              data={service.data}
+              links={service.links}
+            />
+          ))}
+        </div>
 
-      <div className="my-10 md:my-0">
-        <Button
-          variant="text"
-          endIcon={<ArrowRightAltIcon />}
-          className="  bg-gradient-green md:mt-10 hover:border-lightRadientGreen hover:text-lightRadientGreen hover:bg-none hover:border-solid hover:border text-white"
-        >
-          ALL SERVICES
-        </Button>
-      </div>
-    </section>
+        <div className="my-10 md:my-0">
+          <Button
+            variant="text"
+            endIcon={<ArrowRightAltIcon />}
+            className="  bg-gradient-green md:mt-10 hover:border-lightRadientGreen hover:text-lightRadientGreen hover:bg-none hover:border-solid hover:border text-white"
+          >
+            ALL SERVICES
+          </Button>
+        </div>
+      </section>
+    </div>
   );
 };
 

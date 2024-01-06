@@ -14,7 +14,7 @@ const Aboutus = () => {
       <AboutFrontal data={"About Us"} />
       <DigitalAgency />
       <AboutServices />
-      <div className="mb-20 -mt-20">
+      <div className="lg:mb-20 lg:-mt-20">
         <Testimonies />
       </div>
       <MessageUsSection />

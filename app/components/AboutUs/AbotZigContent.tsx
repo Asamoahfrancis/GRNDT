@@ -45,35 +45,37 @@ const serviceData = [
 ];
 const AbotZigContent = () => {
   return (
-    <section className="md:px-[50px] md:absolute top-[20%] left-0 text-center mb-20 ">
-      <div className="py-10 md:py-0">
-        <p className="text-center text-xl md:text-sm text-textColor md:pt-0 tracking-widest md:tracking-normal pt-10 ">
-          OUR SERVICES
-        </p>
-        <p className="text-center text-[25px] md:text-[30px]  text-lightRadientGreen">
-          Explore Our Services
-        </p>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-2 text-base px-[10px] md:px-0 ">
-        {serviceData.map((service) => (
-          <ServiceCard
-            key={service.id}
-            title={service.title}
-            logo={service.logo}
-            data={service.data}
-            links={service.links}
-          />
-        ))}
-      </div>
+    <section className="md:px-[50px] md:top-[10%] lg:top-[20%] md:absolute   w-full  left-0 text-center mb-20  ">
+      <div className="max-w-[1444px] mx-auto">
+        <div className="py-10 md:py-0 text-center">
+          <p className="text-center text-xl md:text-sm text-textColor md:pt-0 tracking-widest md:tracking-normal pt-10 ">
+            OUR SERVICES
+          </p>
+          <p className="text-center text-[25px] md:text-[30px]  text-lightRadientGreen">
+            Explore Our Services
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 text-base px-[10px] md:px-0 ">
+          {serviceData.map((service) => (
+            <ServiceCard
+              key={service.id}
+              title={service.title}
+              logo={service.logo}
+              data={service.data}
+              links={service.links}
+            />
+          ))}
+        </div>
 
-      <div>
-        <Button
-          variant="text"
-          endIcon={<ArrowRightAltIcon />}
-          className="  bg-gradient-green mt-10 hover:border-lightRadientGreen hover:text-lightRadientGreen hover:bg-none hover:border-solid hover:border text-white"
-        >
-          ALL SERVICES
-        </Button>
+        <div>
+          <Button
+            variant="text"
+            endIcon={<ArrowRightAltIcon />}
+            className="  bg-gradient-green mt-10 hover:border-lightRadientGreen hover:text-lightRadientGreen hover:bg-none hover:border-solid hover:border text-white"
+          >
+            ALL SERVICES
+          </Button>
+        </div>
       </div>
     </section>
   );

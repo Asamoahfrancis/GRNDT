@@ -3,7 +3,7 @@ import Image from "next/image";
 import AbotZigContent from "./AbotZigContent";
 const AboutServices = () => {
   return (
-    <div className=" mt-20 relative z-[50]">
+    <div className=" mt-20 relative z-[50]  md:min-h-[1100px] lg:min-h-[800px]">
       <Image
         src="/zigRight.png"
         alt="Picture of the author"

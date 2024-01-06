@@ -56,35 +56,37 @@ const serviceData = [
 ];
 const ServicesActualSection = () => {
   return (
-    <section className="md:px-[50px] text-center mb-20 ">
-      <div className="  my-20">
-        <p className="text-center text-sm text-textColor ">OUR SERVICES</p>
-        <p className="text-center text-[30px]  text-lightRadientGreen">
-          Explore Our Services
-        </p>
-      </div>
-      <div className=" md:flex px-[10px] grid grid-cols-1 gap-4 flex-wrap justify-center text-base ">
-        {serviceData.map((service: any) => (
-          <ServiceActualDataCard
-            key={service.id}
-            title={service.title}
-            logo={service.logo}
-            data={service.data}
-            links={service.links}
-          />
-        ))}
-      </div>
+    <div className=" w-full">
+      <section className="md:px-[50px] max-w-[1444px] mx-auto text-center mb-20 ">
+        <div className="  my-20">
+          <p className="text-center text-sm text-textColor ">OUR SERVICES</p>
+          <p className="text-center text-[30px]  text-lightRadientGreen">
+            Explore Our Services
+          </p>
+        </div>
+        <div className=" lg:flex px-[10px] grid md:grid-cols-2 grid-cols-1 gap-4 flex-wrap justify-center text-base ">
+          {serviceData.map((service: any) => (
+            <ServiceActualDataCard
+              key={service.id}
+              title={service.title}
+              logo={service.logo}
+              data={service.data}
+              links={service.links}
+            />
+          ))}
+        </div>
 
-      <div>
-        <Button
-          variant="text"
-          endIcon={<ArrowRightAltIcon />}
-          className="  bg-gradient-green mt-10 hover:border-lightRadientGreen hover:text-lightRadientGreen hover:bg-none hover:border-solid hover:border text-white"
-        >
-          ALL SERVICES
-        </Button>
-      </div>
-    </section>
+        <div>
+          <Button
+            variant="text"
+            endIcon={<ArrowRightAltIcon />}
+            className="  bg-gradient-green mt-10 hover:border-lightRadientGreen hover:text-lightRadientGreen hover:bg-none hover:border-solid hover:border text-white"
+          >
+            ALL SERVICES
+          </Button>
+        </div>
+      </section>
+    </div>
   );
 };
 

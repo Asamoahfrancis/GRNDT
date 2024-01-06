@@ -16,7 +16,7 @@ const ServiceActualDataCard = ({
 }) => {
   return (
     <section className=" basis-[30%] py-4 px-2 bg-gradient-service  rounded-md">
-      <div className=" text-textColor flex flex-col bg-white h-[300px] shadow-sm pb-4  rounded-md  px-2">
+      <div className=" text-textColor flex flex-col hover:shadow-lg bg-white h-[300px] shadow-sm pb-4  rounded-md  px-2">
         <div className="flex justify-center mt-4">
           <Image
             src={logo}

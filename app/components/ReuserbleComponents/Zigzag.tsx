@@ -9,6 +9,7 @@ const Zigzag = () => {
         src="/zig.png"
         alt="Picture of the author"
         sizes="100vw"
+        priority={true}
         quality={100}
         style={{
           width: "100%",

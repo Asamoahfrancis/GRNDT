@@ -5,8 +5,8 @@ const FrontalContent = () => {
   return (
     <div className="flex h-[500px] items-center text-center justify-center">
       <section className="text-white">
-        <h1 className="md:text-[82px] text-[30px] leading-6">Elevate Your</h1>
-        <h2 className="md:text-[82px] text-[30px] ">
+        <h1 className="md:text-[82px] text-[40px] leading-6">Elevate Your</h1>
+        <h2 className="md:text-[82px] text-[40px] ">
           <span className="text-darkGreen">Digital</span> Presence
         </h2>
         <p className="md:leading-3 md:-mt-2 text-[15px]">
@@ -15,6 +15,7 @@ const FrontalContent = () => {
         <div className=" justify-center gap-4  flex mt-6">
           <Button
             variant="text"
+            href="/services"
             endIcon={<ArrowRightAltIcon />}
             className=" hover:delay-100 hover:transition-all hover:ease-in-out hover:duration-500 bg-green-600 hover:bg-none hover:border-solid hover:border text-white"
           >
@@ -22,6 +23,7 @@ const FrontalContent = () => {
           </Button>
           <Button
             variant="text"
+            href="/contact-us"
             endIcon={<ArrowRightAltIcon />}
             className="hover:delay-100 hover:transition-all hover:ease-in-out hover:duration-500 border  border-solid hover:bg-green-500 hover:border-none text-white"
           >

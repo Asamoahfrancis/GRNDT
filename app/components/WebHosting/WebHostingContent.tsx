@@ -1,7 +1,7 @@
 import React from "react";
 const WebHostingContent = () => {
   return (
-    <div>
+    <div className="max-w-[1444px] mx-auto">
       <div className="px-[10px] md:px-[50px]">
         <p className="text-lightRadientGreen text-[30px]">Web Hosting </p>
         <p className="text-sm text-textColor">

@@ -1,28 +1,12 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
+import useWidth from "@/app/hook/useWidth";
 const SoftwareDigital = () => {
-  const [windowWidth, setWindowWidth] = useState(
-    typeof window !== "undefined" ? window.innerWidth : 0
-  );
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    if (typeof window !== "undefined") {
-      window.addEventListener("resize", handleResize);
-
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
-    }
-  }, []);
-
+  const [width] = useWidth(0);
   return (
-    <div>
-      <section className="grid grid-cols-1 md:grid-cols-2 px-[10px] md:px-[50px] mt-20">
+    <div className="w-full">
+      <section className="grid max-w-[1444px] mx-auto grid-cols-1 md:grid-cols-2 px-[10px] md:px-[50px] mt-20">
         <div className="text-sm order-last md:order-first">
           <p className="mt-8 text-textColor mb-3 text-sm">
             SOFTWARE DEVELOPMENT
@@ -59,21 +43,34 @@ const SoftwareDigital = () => {
           </div>
         </div>
         <div className="flex justify-center items-center">
-          <Image
-            src="/softwarepic.png"
-            alt="Picture of the author"
-            sizes="100vw"
-            style={{
-              width: "90%",
-              height: "auto",
-              ...(windowWidth >= 768 && { width: "60%" }),
-            }}
-            width={500}
-            height={300}
-          />
+          {width >= 768 ? (
+            <Image
+              src="/softwarepic.png"
+              alt="Picture of the author"
+              sizes="100vw"
+              style={{
+                width: "70%",
+                height: "auto",
+              }}
+              width={500}
+              height={300}
+            />
+          ) : (
+            <Image
+              src="/softwarepic.png"
+              alt="Picture of the author"
+              sizes="100vw"
+              style={{
+                width: "90%",
+                height: "auto",
+              }}
+              width={500}
+              height={300}
+            />
+          )}
         </div>
       </section>
-      <section className=" my-10 mb-20 md:px-[100px] px-[10px]">
+      <section className=" my-10 mb-20 md:px-[100px] px-[10px] max-w-[1444px] mx-auto">
         <h1 className=" text-lightRadientGreen text-xl">
           Our Software Development Services
         </h1>

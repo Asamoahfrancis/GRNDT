@@ -6,96 +6,81 @@ import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import useWidth from "@/app/hook/useWidth";
 const Zigzagcontent = () => {
   const [width] = useWidth(0);
-  const [windowWidth, setWindowWidth] = useState(
-    typeof window !== "undefined" ? window.innerWidth : 0
-  );
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    if (typeof window !== "undefined") {
-      window.addEventListener("resize", handleResize);
-
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
-    }
-  }, []);
 
   return (
-    <div className="md:absolute  top-[20%] left-0  md:px-[50px] ">
-      <section className="grid grid-cols-1  md:grid-cols-2">
-        <div className="px-8 order-last md:order-first md:px-0 mt-10 md:mt-0 flex flex-col gap-6 md:block">
-          <div>
-            <p className="md:text-sm tracking-widest md:tracking-normal text-textColor text-[16px] mb-4">
-              WHAT WE DO?
+    <div className="md:absolute  md:top-[0%] lg:top-[20%] left-0  md:px-[50px] w-full   ">
+      <div className="w-full relative ">
+        <section className="grid grid-cols-1 max-w-[1444px] mx-auto   md:grid-cols-2">
+          <div className="px-8 order-last md:order-first md:px-0 mt-10 md:mt-0 flex flex-col gap-6 md:block">
+            <div>
+              <p className="md:text-sm tracking-widest md:tracking-normal text-textColor text-[16px] mb-4">
+                WHAT WE DO?
+              </p>
+              <p className="md:text-[30px] text-[25px] leading-4 text-lightRadientGreen">
+                Transform Businesses
+              </p>
+              <p className="md:text-[30px] text-[25px]  text-lightRadientGreen">
+                and Amplify Brand Influence
+              </p>
+            </div>
+            <p className="border-l-[3px] md:my-6 text-textColor border-l-solid border-l-lightRadientGreen pl-6">
+              We strive to expedite the adoption of software, enhancing the
+              efficiency and profitability of companies and organizations. Our
+              commitment lies in promptly and professionally fulfilling their
+              software requirements.
             </p>
-            <p className="md:text-[30px] text-[25px] leading-4 text-lightRadientGreen">
-              Transform Businesses
-            </p>
-            <p className="md:text-[30px] text-[25px]  text-lightRadientGreen">
-              and Amplify Brand Influence
-            </p>
+            <div>
+              <Button
+                variant="text"
+                href="/about-us"
+                endIcon={<ArrowRightAltIcon />}
+                className=" hover:text-white px-8 hover:transition  hover:duration-200 hover:ease-out hover:bg-green-500  border-[1px] border-solid border-darkGreen  text-darkGreen"
+              >
+                About Us
+              </Button>
+            </div>
           </div>
-          <p className="border-l-[3px] md:my-6 text-textColor border-l-solid border-l-lightRadientGreen pl-6">
-            We strive to expedite the adoption of software, enhancing the
-            efficiency and profitability of companies and organizations. Our
-            commitment lies in promptly and professionally fulfilling their
-            software requirements.
-          </p>
-          <div>
-            <Button
-              variant="text"
-              href="/about-us"
-              endIcon={<ArrowRightAltIcon />}
-              className=" hover:text-white px-8 hover:transition  hover:duration-200 hover:ease-out hover:bg-green-500  border-[1px] border-solid border-darkGreen  text-darkGreen"
-            >
-              About Us
-            </Button>
+          <div className="flex mt-12 md:mt-0 z-50 justify-center items-center">
+            {width >= 768 ? (
+              <Image
+                src="/happyImage.png"
+                alt="Picture of the author"
+                sizes="100vw"
+                quality={100}
+                style={{
+                  width: "60%",
+                  height: "auto",
+                }}
+                width={500}
+                height={300}
+              />
+            ) : (
+              <Image
+                src="/happyImage.png"
+                alt="Picture of the author"
+                sizes="100vw"
+                quality={100}
+                style={{
+                  width: "90%",
+                  height: "auto",
+                }}
+                width={500}
+                height={300}
+              />
+            )}
           </div>
-        </div>
-        <div className="flex mt-12 md:mt-0 z-50 justify-center items-center">
-          {width >= 768 ? (
-            <Image
-              src="/happyImage.png"
-              alt="Picture of the author"
-              sizes="100vw"
-              quality={100}
-              style={{
-                width: "60%",
-                height: "auto",
-              }}
-              width={500}
-              height={300}
-            />
-          ) : (
-            <Image
-              src="/happyImage.png"
-              alt="Picture of the author"
-              sizes="100vw"
-              quality={100}
-              style={{
-                width: "90%",
-                height: "auto",
-              }}
-              width={500}
-              height={300}
-            />
-          )}
-        </div>
-      </section>
+        </section>
+      </div>
 
-      <div className="md:mt-10 ">
-        <section className="text-center">
+      <div className="md:mt-10 max-w-[1444px] mx-auto">
+        <section className="text-center ">
           <div className=" grid md:block place-items-center mt-6 md:mt-0">
             <p className="w-[70%] md:w-full text-[16px] tracking-widest md:tracking-normal md:text-sm text-textColor md:mb-2">
               Our mission is to foster the growth of your business.
             </p>
           </div>
           <div className="grid  place-items-center py-4 md:py-0">
-            <p className="md:text-[30px] md:w-[80%] w-[70%] md:my-2 md:leading-[30px]  text-lightRadientGreen">
+            <p className="lg:text-[30px] md:text-[20px] md:w-[90%] lg:w-[80%] w-[70%] md:my-2 md:leading-[20px] md:my-2 lg:my-0 lg:leading-[30px]  text-lightRadientGreen">
               Elevating your visionary solution with a blend of outmost
               professionalism and meticulous care.
             </p>
@@ -105,7 +90,7 @@ const Zigzagcontent = () => {
               variant="text"
               href="/contact-us"
               endIcon={<ArrowRightAltIcon />}
-              className=" hover:text-white my-3 px-8 hover:transition  hover:duration-200 hover:ease-out hover:bg-green-500  border-[1px] border-solid border-darkGreen  text-darkGreen"
+              className=" hover:text-white  my-3 px-8 hover:transition  hover:duration-200 hover:ease-out hover:bg-green-500  border-[1px] border-solid border-darkGreen  text-darkGreen"
             >
               CONTACT US
             </Button>

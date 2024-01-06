@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 const SoftwareDigital = () => {
   return (
-    <div>
+    <div className="max-w-[1444px] mx-auto">
       <div className="md:px-[50px] px-[10px] py-20 md:py-0">
         <p className="tracking-widest md:text-sm text-textColor text-xl">
           User Experience Design
