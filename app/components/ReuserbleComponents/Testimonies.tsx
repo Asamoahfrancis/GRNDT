@@ -13,10 +13,9 @@ const Testimonies = () => {
     RightClick();
   }, [count]);
 
-  console.log(count);
   return (
     <div className="md:px-[50px]  px-[20px] md:mt-20 md:flex  justify-center">
-      <section className="flex items-center  md:gap-20 text-textColor">
+      <section className="flex items-center flex-col md:flex-row md:gap-20 text-textColor">
         <p
           className="hover:rounded-full hover:p-1 cursor-pointer  hover:bg-lightRadientGreen"
           onClick={() => ctx.LeftClick()}
