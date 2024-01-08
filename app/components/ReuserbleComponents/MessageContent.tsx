@@ -9,6 +9,7 @@ import Snackbars from "./Snackbar";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert, { AlertProps } from "@mui/material/Alert";
 import { useContext } from "react";
+import * as Yup from "yup";
 import SnackbarProvider, {
   SnackbaContext,
 } from "@/app/context/SnackbarContext/Snackbar";
@@ -28,9 +29,31 @@ const MessageContent = () => {
       email: "",
       message: "",
     },
+    validationSchema: Yup.object({
+      name: Yup.string()
+        .max(20, "Must be 20 characters or less")
+        .required("Required"),
+      email: Yup.string().email("Invalid email address").required("Required"),
+      message: Yup.string().required("Required"),
+    }),
 
-    onSubmit: (values) => {
-      console.log(values);
+    onSubmit: async (values) => {
+      const payload = {
+        name: values.name,
+        email: values.email,
+        message: values.message,
+      };
+      const res = await fetch("/api/message", {
+        method: "POST",
+        body: JSON.stringify(payload),
+        headers: { "Content-Type": "application/json" },
+      });
+
+      try {
+        const data = res.json();
+      } catch (error) {
+        console.log(error);
+      }
       formik.resetForm();
     },
   });
@@ -72,7 +95,12 @@ const MessageContent = () => {
               Send A Message
             </p>
             <TextField
-              label="Enter Your Name"
+              error={formik.touched.name && formik.errors.name ? true : false}
+              label={`${
+                formik.touched.name && formik.errors.name
+                  ? "Incorrect entry"
+                  : "Enter Your Name"
+              }`}
               variant="outlined"
               className="bg-[#E3E3E3]  opacity-40"
               id="name"
@@ -80,19 +108,29 @@ const MessageContent = () => {
               type="text"
               onChange={formik.handleChange}
               value={formik.values.name}
+              onBlur={formik.handleBlur}
             />
             <TextField
-              label="Enter Your Email"
+              label={`${
+                formik.touched.name && formik.errors.name
+                  ? "Incorrect entry"
+                  : "Enter Your Email"
+              }`}
               variant="outlined"
               className="bg-[#E3E3E3]  opacity-40"
               id="email"
               name="email"
-              type="text"
+              type="email"
               onChange={formik.handleChange}
               value={formik.values.email}
+              onBlur={formik.handleBlur}
             />
             <TextField
-              label="Enter your Message"
+              label={`${
+                formik.touched.name && formik.errors.name
+                  ? "Incorrect entry"
+                  : "Enter your Message"
+              }`}
               multiline
               rows={10}
               color="primary"
@@ -102,12 +140,14 @@ const MessageContent = () => {
               type="text"
               onChange={formik.handleChange}
               value={formik.values.message}
+              onBlur={formik.handleBlur}
             />
             <div>
               <Button
                 onClick={ctx.handleClick}
                 variant="text"
                 type="submit"
+                disabled={formik.isSubmitting}
                 endIcon={<ArrowRightAltIcon />}
                 className="  text-white hover:text-lightRadientGreen hover:bg-none  bg-gradient-green px-8 text-center border-[1px] border-solid border-darkGreen "
               >

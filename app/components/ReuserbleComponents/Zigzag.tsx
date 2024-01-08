@@ -4,7 +4,7 @@ import Zigzagcontent from "./Zigzagcontent";
 
 const Zigzag = () => {
   return (
-    <div className="-mt-40 md:-mt-0 bg-gradient-service relative ">
+    <div className=" -mt-40 md:-mt-0 bg-gradient-service relative ">
       <Image
         src="/zig.png"
         alt="Picture of the author"

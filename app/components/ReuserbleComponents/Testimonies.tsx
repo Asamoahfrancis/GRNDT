@@ -1,24 +1,70 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { TestimonialsContext } from "@/app/context/TestimoniesContext/TestimoniesContext";
 import { useContext } from "react";
+import TestimoniesData from "./TestimoniesData";
 const Testimonies = () => {
   const ctx = useContext(TestimonialsContext);
-  const [count, setCount] = useState(1);
-  const RightClick = () => {
-    setCount((prev) => prev++);
+  const [count, setCount] = useState(0);
+
+  const LeftClick = () => {
+    setCount((prevIndex) =>
+      prevIndex === 0 ? (prevIndex = 0) : prevIndex - 1
+    );
   };
-  useEffect(() => {
-    RightClick();
-  }, [count]);
+
+  const RightClick = () => {
+    setCount((prevIndex) => (prevIndex === 2 ? 0 : prevIndex + 1));
+  };
+
+  const TestimoniesDatum = [
+    {
+      id: "t1",
+      data_one: `“You and your team are doing good work. Ill do everything I can to
+      bring you more clients”`,
+      data_two: `Jonathan Kwamegah`,
+      data_three: `CEO KNVAS`,
+    },
+    {
+      id: "t2",
+      data_one: `“This is a built-in middleware function in Express. It parses incoming requests with JSON”`,
+      data_two: `Unicode encoding`,
+      data_three: ` the middleware`,
+    },
+    {
+      id: "t3",
+      data_one: `“You and your team are doing good work. Ill do everything I can to
+      bring you more clients”`,
+      data_two: `Jonathan Kwamegah`,
+      data_three: `CEO KNVAS`,
+    },
+    {
+      id: "t4",
+      data_one: `“This is a built-in middleware function in Express. It parses incoming requests with JSON”`,
+      data_two: `Unicode encoding`,
+      data_three: ` the middleware`,
+    },
+    {
+      id: "t5",
+      data_one: `“This is used to determine what media type the middleware will parse”`,
+      data_two: ` middleware, allowing`,
+      data_three: `Sends the specified `,
+    },
+    {
+      id: "t6",
+      data_one: `“This is used to determine what media type the middleware will parse”`,
+      data_two: ` middleware, allowing`,
+      data_three: `Sends the specified `,
+    },
+  ];
 
   return (
     <div className="md:px-[50px]  px-[20px] md:mt-20 md:flex  justify-center">
-      <section className="flex items-center flex-col md:flex-row md:gap-20 text-textColor">
+      <section className="flex items-center my-4 md:my-0 flex-col md:flex-row  md:gap-20 text-textColor">
         <p
           className="hover:rounded-full hover:p-1 cursor-pointer  hover:bg-lightRadientGreen"
-          onClick={() => ctx.LeftClick()}
+          onClick={LeftClick}
         >
           <Image
             src="/pushRight.png"
@@ -34,20 +80,17 @@ const Testimonies = () => {
           <p className="md:text-[30px] text-[20px] my-3 md:my-0  text-lightRadientGreen md:mb-10">
             Testimonials
           </p>
-          <div className="md:grid place-items-center my-6">
-            <p className=" md:w-[60%] md:-mt-4">
-              “You and your team are doing good work. Ill do everything I can to
-              bring you more clients”
-            </p>
-            <p className="md:text-xs text-base font-[500] tracking-widest md:mt-5">
-              Jonathan Kwamegah{" "}
-            </p>
-            <p className="md:text-xs text-textColor mb-6 md:mb-0">CEO KNVAS</p>
-          </div>
+          {
+            <TestimoniesData
+              data_one={TestimoniesDatum[count].data_one}
+              data_two={TestimoniesDatum[count].data_two}
+              data_three={TestimoniesDatum[count].data_three}
+            />
+          }
         </div>
         <p
           className="hover:rounded-full hover:p-1 cursor-pointer  hover:bg-lightRadientGreen"
-          onClick={() => RightClick()}
+          onClick={RightClick}
         >
           <Image
             src="/pushLeft.png"

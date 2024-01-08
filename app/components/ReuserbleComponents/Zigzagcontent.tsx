@@ -80,7 +80,7 @@ const Zigzagcontent = () => {
             </p>
           </div>
           <div className="grid  place-items-center py-4 md:py-0">
-            <p className="lg:text-[30px] md:text-[20px] md:w-[90%] lg:w-[80%] w-[70%] md:my-2 md:leading-[20px] md:my-2 lg:my-0 lg:leading-[30px]  text-lightRadientGreen">
+            <p className="lg:text-[30px] md:text-[20px] md:w-[90%] lg:w-[80%] w-[70%]  md:leading-[20px] md:my-2 lg:my-0 lg:leading-[30px]  text-lightRadientGreen">
               Elevating your visionary solution with a blend of outmost
               professionalism and meticulous care.
             </p>
