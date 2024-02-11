@@ -149,7 +149,7 @@ const MessageContent = () => {
                 type="submit"
                 disabled={formik.isSubmitting}
                 endIcon={<ArrowRightAltIcon />}
-                className="  text-white hover:text-lightRadientGreen hover:bg-none  bg-gradient-green px-8 text-center border-[1px] border-solid border-darkGreen "
+                className="bg-gradient-green  px-4 hover:border-lightRadientGreen hover:bg-gradient-inverse text-white transition-all duration-300 ease-in-out"
               >
                 SEND MESSAGE{" "}
               </Button>

@@ -9,7 +9,7 @@ const Branding = () => {
     <div>
       <AboutFrontal data={"Branding"} />
       <div className="my-10 md:my-0">
-        <UserExperience picsource={"/Branding.png"} />
+        <UserExperience picsource={"/Branding.png"} pic2={"/nextbrand.png"} />
       </div>
       <BrandingContent />
       <MessageUsSection />

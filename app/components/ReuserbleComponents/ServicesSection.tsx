@@ -54,7 +54,7 @@ const ServicesSection = () => {
             Explore Our Services
           </p>
         </div>
-        <div className=" grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 gap-2 text-base ">
+        <div className=" grid grid-col-1 md:grid-cols-2  lg:grid-cols-4 gap-4  text-base ">
           {serviceData.map((service: any) => (
             <ServiceCard
               key={service.id}
@@ -70,7 +70,7 @@ const ServicesSection = () => {
           <Button
             variant="text"
             endIcon={<ArrowRightAltIcon />}
-            className="  bg-gradient-green md:mt-10 hover:border-lightRadientGreen hover:text-lightRadientGreen hover:bg-none hover:border-solid hover:border text-white"
+            className="bg-gradient-green md:mt-10 px-4 hover:border-lightRadientGreen hover:bg-gradient-inverse text-white transition-all duration-300 ease-in-out"
           >
             ALL SERVICES
           </Button>

@@ -59,7 +59,9 @@ const ServicesActualSection = () => {
     <div className=" w-full">
       <section className="md:px-[50px] max-w-[1444px] mx-auto text-center mb-20 ">
         <div className="  my-20">
-          <p className="text-center text-sm text-textColor ">OUR SERVICES</p>
+          <p className="text-center text-sm text-textColor tracking-widest ">
+            OUR SERVICES
+          </p>
           <p className="text-center text-[30px]  text-lightRadientGreen">
             Explore Our Services
           </p>

@@ -3,7 +3,7 @@ import Image from "next/image";
 const AboutFrontalContent = ({ data }: { data: string }) => {
   return (
     <div className=" w-[80%] flex justify-center h-[200px] relative">
-      <p className="text-[35px] md:text-[50px] text-center mt-10 text-lightRadientGreen">
+      <p className="text-[35px] tracking-widest  md:text-[50px] text-center mt-10 text-lightRadientGreen">
         {data}
       </p>
       <Image

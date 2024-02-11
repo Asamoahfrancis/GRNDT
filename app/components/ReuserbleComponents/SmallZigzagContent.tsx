@@ -7,7 +7,7 @@ const SmallZigzagContent = () => {
   return (
     <div className="md:absolute  md:top-[0%] lg:top-[20%]   h-full left-0  w-full  md:px-[50px] ">
       <section className=" text-center max-w-[1444px] mx-auto ">
-        <p className="   md:text-sm text-textColor    translate-y-20 md:translate-y-0  text-xl ">
+        <p className="   md:text-sm text-textColor  tracking-widest  translate-y-20 md:translate-y-0 md:mt-20 lg:mt-0 text-xl ">
           PORTFOLIO
         </p>
         <p className=" md:text-[30px] text-[20px] text-4xl  mt-20 md:mt-0  text-lightRadientGreen">
@@ -46,14 +46,18 @@ const SmallZigzagContent = () => {
           </Button>
         </div>
 
-        <div className="grid  px-[10px] md:px-0 bg-gradient-service grid-cols-1 md:grid-cols-3 md:gap-4 gap-10  md:mt-20 ">
-          <section className="flex md:block gap-2 flex-col items-center justify-center">
-            <div>
+        <div className="grid  px-[10px] md:px-0 bg-gradient-service grid-cols-1 md:grid-cols-2  lg:grid-cols-3   gap-4  md:mt-20 ">
+          <section className="flex group md:block gap-2 flex-col items-center justify-center">
+            <div className="border border-green-500 rounded-md relative w-[95%]  min-h-[300px] group-hover:bg-green-600 hover:bg-none  p-3   transition-colors duration-500 ease-in-out  group cursor-pointer ">
               <Image
                 src="/vau.png"
-                width={387}
-                height={250}
                 alt="Picture of the author"
+                sizes="238px"
+                fill
+                style={{
+                  objectFit: "contain",
+                }}
+                className="lg:group-hover:scale-y-[1.28] lg:group-hover:scale-x-[1.09] md:group-hover:scale-y-[1.6] md:group-hover:scale-x-[1.09] group-hover:scale-x-[1.21] group-hover:scale-y-[1.15] transition-all ease-in-out duration-500 p-2"
               />
             </div>
             <p className="text-xs text-textColor md:mt-3 tracking-widest ">
@@ -62,12 +66,16 @@ const SmallZigzagContent = () => {
             <p>KNVAS Work Experience Platform</p>
           </section>
           <section className="flex md:block gap-2 flex-col items-center justify-center">
-            <div>
+            <div className="border border-green-500 rounded-md group relative w-[95%] min-h-[300px] hover:bg-green-600 hover:bg-none  p-3   transition-colors duration-500 ease-in-out  group cursor-pointer ">
               <Image
                 src="/black.png"
-                width={387}
-                height={250}
                 alt="Picture of the author"
+                sizes="375px"
+                fill
+                style={{
+                  objectFit: "contain",
+                }}
+                className="group-hover:scale-[1.05] transition-all ease-in-out duration-500 p-4 lg:group-hover:scale-y-[1.25] lg:group-hover:scale-x-[1.06] "
               />
             </div>
             <p className="text-xs  text-textColor mt-3 tracking-widest ">
@@ -76,12 +84,16 @@ const SmallZigzagContent = () => {
             <p>INVACTOR Web Platform</p>
           </section>
           <section className="flex gap-2 md:block flex-col items-center justify-center">
-            <div>
+            <div className="border border-green-500 rounded-md w-[95%] relative min-h-[300px] hover:bg-green-600 hover:bg-none  p-3   transition-colors duration-500 ease-in-out  group cursor-pointer ">
               <Image
                 src="/thebagshop.png"
-                width={387}
-                height={250}
                 alt="Picture of the author"
+                sizes="375px"
+                fill
+                style={{
+                  objectFit: "contain",
+                }}
+                className="group-hover:scale-[1.05] transition-all ease-in-out duration-500 p-4 lg:group-hover:scale-y-[1.25] lg:group-hover:scale-x-[1.06] "
               />
             </div>
             <p className="text-xs text-textColor mt-3 tracking-widest ">
@@ -93,7 +105,7 @@ const SmallZigzagContent = () => {
         <Button
           variant="text"
           endIcon={<ArrowRightAltIcon />}
-          className="hover:text-lightRadientGreen my-20   bg-gradient-green mt-10 hover:bg-none hover:border-solid hover:border text-white"
+          className="bg-gradient-green px-4 mt-6 md:mt-10 hover:border-lightRadientGreen hover:bg-gradient-inverse text-white transition-all duration-300 ease-in-out"
         >
           ALL SERVICES
         </Button>

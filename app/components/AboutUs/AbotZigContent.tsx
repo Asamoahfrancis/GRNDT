@@ -71,7 +71,7 @@ const AbotZigContent = () => {
           <Button
             variant="text"
             endIcon={<ArrowRightAltIcon />}
-            className="  bg-gradient-green mt-10 hover:border-lightRadientGreen hover:text-lightRadientGreen hover:bg-none hover:border-solid hover:border text-white"
+            className="bg-gradient-green mt-6 px-4 hover:border-lightRadientGreen hover:bg-gradient-inverse text-white transition-all duration-300 ease-in-out"
           >
             ALL SERVICES
           </Button>

@@ -5,19 +5,19 @@ const FrontalContent = () => {
   return (
     <div className="flex h-[500px] items-center text-center justify-center">
       <section className="text-white">
-        <h1 className="md:text-[82px] text-[40px] leading-6">Elevate Your</h1>
-        <h2 className="md:text-[82px] text-[40px] ">
+        <h1 className="md:text-[60px] text-[40px]  leading-6">Elevate Your</h1>
+        <h2 className="md:text-[60px] text-[40px] ">
           <span className="text-darkGreen">Digital</span> Presence
         </h2>
-        <p className="md:leading-3 md:-mt-2 text-[15px]">
+        <p className="md:leading-3  text-[20px] ">
           By transforming Ideas into Exceptional Software Solutions.
         </p>
-        <div className=" justify-center gap-4  flex mt-6">
+        <div className=" justify-center gap-4 mt-7  flex">
           <Button
             variant="text"
             href="/services"
             endIcon={<ArrowRightAltIcon />}
-            className=" hover:delay-100 hover:transition-all hover:ease-in-out hover:duration-500 bg-green-600 hover:bg-none hover:border-solid hover:border text-white"
+            className="bg-gradient-green  px-4 hover:border-lightRadientGreen hover:bg-gradient-inverse text-white transition-all duration-300 ease-in-out"
           >
             Learn More
           </Button>
@@ -25,7 +25,7 @@ const FrontalContent = () => {
             variant="text"
             href="/contact-us"
             endIcon={<ArrowRightAltIcon />}
-            className="hover:delay-100 hover:transition-all hover:ease-in-out hover:duration-500 border  border-solid hover:bg-green-500 hover:border-none text-white"
+            className=" border  border-solid px-4  text-white"
           >
             Get in Touch
           </Button>

@@ -15,9 +15,9 @@ const ServiceCard = ({
   links: string;
 }) => {
   return (
-    <section className=" py-4 px-2 bg-gradient-service   rounded-md">
-      <div className=" text-textColor  hover:shadow-lg flex flex-col bg-white md:min-h-[400px] shadow-sm pb-4  rounded-md  px-2">
-        <div className="flex justify-center md:mt-4">
+    <section className="  bg-gradient-service hover:bg-green-600 hover:bg-none  p-3   transition-colors duration-500 ease-in-out  group cursor-pointer rounded-md flex justify-center items-center">
+      <div className=" text-textColor  w-[95%] h-full  flex flex-col  py-10 px-4 bg-white shadow-md rounded-md group-hover:bg-white group-hover:scale-y-105 group-hover:scale-x-110 transition-all ease-in-out duration-500 ">
+        <div className="flex group-hover:scale-110 transition-all ease-in-out duration-500 mb-4 justify-center ">
           <Image
             src={logo}
             width={50}

@@ -11,6 +11,9 @@ const config: Config = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-green": "linear-gradient(90deg, #19A94A 0%, #80C674 67.27%)",
+        "gradient-inverse":
+          "linear-gradient(90deg, #80C674 0%,#19A94A  67.27%)",
+
         "gradient-service":
           "linear-gradient(175deg, #F4FAF3 35.71%, rgba(244, 250, 243, 0.19) 83.46%)",
       },

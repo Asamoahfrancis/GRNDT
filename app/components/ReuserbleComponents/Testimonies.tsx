@@ -61,16 +61,17 @@ const Testimonies = () => {
 
   return (
     <div className="md:px-[50px]  px-[20px] md:mt-20 md:flex  justify-center">
-      <section className="flex items-center my-4 md:my-0 flex-col md:flex-row  md:gap-20 text-textColor">
+      <section className="flex items-center my-4 md:my-0 justify-center  md:flex-row  md:gap-20 text-textColor">
         <p
-          className="hover:rounded-full hover:p-1 cursor-pointer  hover:bg-lightRadientGreen"
+          className=" p-2 rounded-full  cursor-pointer  bg-gradient-green "
           onClick={LeftClick}
         >
           <Image
             src="/pushRight.png"
-            width={40}
-            height={40}
+            width={24}
+            height={24}
             alt="Picture of the author"
+            className="hover:scale-150 transition-all duration-300 ease-in-out"
           />
         </p>
         <div className="text-center mt-10 md:mt-0">
@@ -89,14 +90,15 @@ const Testimonies = () => {
           }
         </div>
         <p
-          className="hover:rounded-full hover:p-1 cursor-pointer  hover:bg-lightRadientGreen"
+          className=" p-2 rounded-full  cursor-pointer  bg-gradient-green "
           onClick={RightClick}
         >
           <Image
-            src="/pushLeft.png"
-            width={40}
-            height={40}
+            src="/arrow-circle-left.png"
+            width={24}
+            height={24}
             alt="Picture of the author"
+            className="hover:scale-150 transition-all duration-300 ease-in-out"
           />
         </p>
       </section>

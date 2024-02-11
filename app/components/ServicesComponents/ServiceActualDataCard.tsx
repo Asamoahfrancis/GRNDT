@@ -15,9 +15,9 @@ const ServiceActualDataCard = ({
   links: string;
 }) => {
   return (
-    <section className=" basis-[30%] py-4 px-2 bg-gradient-service  rounded-md">
-      <div className=" text-textColor flex flex-col hover:shadow-lg bg-white h-[300px] shadow-sm pb-4  rounded-md  px-2">
-        <div className="flex justify-center mt-4">
+    <section className=" basis-[30%]   p-4 bg-gradient-service hover:bg-none hover:bg-green-600 transition-colors duration-500 ease-in-out  group cursor-pointer rounded-md">
+      <div className=" text-textColor px-4 h-full flex flex-col shadow-md bg-white  pb-4   rounded-md  md:group-hover:scale-y-105  group-hover:bg-white  group-hover:scale-105  transition-all ease-in-out duration-500 ">
+        <div className="flex justify-center mt-4 group-hover:scale-110   transition-all ease-in-out duration-600">
           <Image
             src={logo}
             width={50}
@@ -33,7 +33,7 @@ const ServiceActualDataCard = ({
             size="small"
             href={links}
             endIcon={<ArrowRightAltIcon />}
-            className="px-8 hover:text-white  hover:bg-gradient-green  border-[1px]  border-solid border-darkGreen  text-darkGreen"
+            className="bg-gradient-green mt-6 px-4 hover:border-lightRadientGreen hover:bg-gradient-inverse text-white transition-all duration-300 ease-in-out"
           >
             View More
           </Button>

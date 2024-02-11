@@ -7,7 +7,9 @@ const PortfolioData = () => {
     <div className="w-full ">
       <div className=" max-w-[1444px] mx-auto   md:px-[50px] ">
         <section className=" text-center my-20 pb-24">
-          <p className="md:text-sm text-textColor text-[20px] ">PORTFOLIO</p>
+          <p className="md:text-sm text-textColor text-[20px] tracking-widest">
+            PORTFOLIO
+          </p>
           <p className="text-[30px]  text-lightRadientGreen my-4 md:my-0">
             Our Works
           </p>
@@ -44,12 +46,13 @@ const PortfolioData = () => {
 
           <div className="grid  grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3 gap-4 md:mt-20 px-[10px] md:px-0">
             <section>
-              <div className="hover:shadow-lg">
+              <div className="border rounded-md border-green-500 shadow-md hover:bg-green-600 hover:bg-none transition-colors duration-500 ease-in-out  group cursor-pointer">
                 <Image
                   src="/vau.png"
                   width={387}
                   height={250}
                   alt="Picture of the author"
+                  className="hover:scale-[1.08] transition-all ease-in-out duration-500  p-2"
                 />
               </div>
               <p className="text-xs text-textColor mt-3 tracking-widest ">
@@ -58,12 +61,13 @@ const PortfolioData = () => {
               <p>KNVAS Work Experience Platform</p>
             </section>
             <section>
-              <div className="hover:shadow-lg">
+              <div className="border rounded-md border-green-500 shadow-md hover:bg-green-600 hover:bg-none transition-colors duration-500 ease-in-out  group cursor-pointer">
                 <Image
                   src="/black.png"
                   width={387}
                   height={250}
                   alt="Picture of the author"
+                  className="hover:scale-[1.08]  p-6 transition-all ease-in-out duration-500  "
                 />
               </div>
               <p className="text-xs text-textColor mt-3 tracking-widest ">
@@ -72,12 +76,13 @@ const PortfolioData = () => {
               <p>INVACTOR Web Platform</p>
             </section>
             <section>
-              <div className="hover:shadow-lg">
+              <div className="border rounded-md border-green-500 shadow-md hover:bg-green-600 hover:bg-none transition-colors duration-500 ease-in-out  group cursor-pointer">
                 <Image
                   src="/thebagshop.png"
                   width={387}
                   height={250}
                   alt="Picture of the author"
+                  className="hover:scale-[1.08]   p-6 transition-all ease-in-out duration-500 "
                 />
               </div>
               <p className="text-xs text-textColor mt-3 tracking-widest ">
@@ -86,12 +91,13 @@ const PortfolioData = () => {
               <p>THEBAGSHOPGH DASHBOARD</p>
             </section>
             <section>
-              <div className="hover:shadow-lg">
+              <div className="border rounded-md border-green-500 shadow-md hover:bg-green-600 hover:bg-none transition-colors duration-500 ease-in-out  group cursor-pointer">
                 <Image
                   src="/mireku one.png"
                   width={387}
                   height={250}
                   alt="Picture of the author"
+                  className="hover:scale-[1.08]   p-6 transition-all ease-in-out duration-500 "
                 />
               </div>
               <p className="text-xs text-textColor mt-3 tracking-widest ">
@@ -99,13 +105,15 @@ const PortfolioData = () => {
               </p>
               <p>Mireku Duker Foundation Branding</p>
             </section>
+
             <section>
-              <div className="hover:shadow-lg">
+              <div className="border rounded-md border-green-500 shadow-md hover:bg-green-600 hover:bg-none transition-colors duration-500 ease-in-out  group cursor-pointer">
                 <Image
-                  src="/kanvas paint.png"
+                  src="/kanvas.png"
                   width={387}
                   height={250}
                   alt="Picture of the author"
+                  className="hover:scale-[1.08]   p-6 transition-all ease-in-out duration-500 "
                 />
               </div>
               <p className="text-xs text-textColor mt-3 tracking-widest ">
@@ -114,12 +122,13 @@ const PortfolioData = () => {
               <p>KNVAS</p>
             </section>
             <section>
-              <div className="hover:shadow-lg">
+              <div className="border rounded-md border-green-500 shadow-md hover:bg-green-600 hover:bg-none transition-colors duration-500 ease-in-out  group cursor-pointer">
                 <Image
                   src="/xtra petro.png"
                   width={387}
                   height={250}
                   alt="Picture of the author"
+                  className="hover:scale-[1.08]   p-6 transition-all ease-in-out duration-500 "
                 />
               </div>
               <p className="text-xs text-textColor mt-3 tracking-widest ">
