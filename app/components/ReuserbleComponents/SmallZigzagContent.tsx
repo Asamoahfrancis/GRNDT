@@ -57,7 +57,7 @@ const SmallZigzagContent = () => {
                 style={{
                   objectFit: "contain",
                 }}
-                className="lg:group-hover:scale-y-[1.28] lg:group-hover:scale-x-[1.09] md:group-hover:scale-y-[1.6] md:group-hover:scale-x-[1.09] group-hover:scale-x-[1.21] group-hover:scale-y-[1.15] transition-all ease-in-out duration-500 p-2"
+                className="lg:group-hover:scale-y-[1.25] lg:group-hover:scale-x-[1.09] md:group-hover:scale-y-[1.6] md:group-hover:scale-x-[1.09] group-hover:scale-x-[1.21] group-hover:scale-y-[1.15] transition-all ease-in-out duration-500 p-2"
               />
             </div>
             <p className="text-xs text-textColor md:mt-3 tracking-widest ">
