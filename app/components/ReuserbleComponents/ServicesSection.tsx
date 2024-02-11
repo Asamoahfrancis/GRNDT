@@ -45,7 +45,7 @@ const serviceData = [
 const ServicesSection = () => {
   return (
     <div className="w-full md:my-20 lg:my-0">
-      <section className="px-[50px]  mx-auto max-w-[1444px]  text-center md:mb-20 ">
+      <section className="md:px-[50px] px-4  mx-auto max-w-[1444px]  text-center md:mb-20 ">
         <div className="py-6 md:py-0 my-6 md:my-6">
           <p className="text-center text-sm text-textColor my-2 md:my-0">
             OUR SERVICES

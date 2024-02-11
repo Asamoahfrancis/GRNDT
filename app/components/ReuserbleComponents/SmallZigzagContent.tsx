@@ -46,7 +46,54 @@ const SmallZigzagContent = () => {
           </Button>
         </div>
 
-        <div className="grid  px-[10px] md:px-0 bg-gradient-service grid-cols-1 md:grid-cols-2  lg:grid-cols-3   gap-4  md:mt-20 ">
+        <div className="grid  grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3 gap-4 md:mt-20 px-[10px] md:px-0">
+          <section>
+            <div className="border rounded-md border-green-500 shadow-md hover:bg-green-600 hover:bg-none transition-colors duration-500 ease-in-out  group cursor-pointer">
+              <Image
+                src="/vau.png"
+                width={387}
+                height={250}
+                alt="Picture of the author"
+                className="hover:scale-[1.08] transition-all ease-in-out duration-500  p-2"
+              />
+            </div>
+            <p className="text-xs text-textColor mt-3 tracking-widest ">
+              WEB & MOBILE PLATFORM
+            </p>
+            <p>KNVAS Work Experience Platform</p>
+          </section>
+          <section>
+            <div className="border rounded-md border-green-500 shadow-md hover:bg-green-600 hover:bg-none transition-colors duration-500 ease-in-out  group cursor-pointer">
+              <Image
+                src="/black.png"
+                width={387}
+                height={250}
+                alt="Picture of the author"
+                className="hover:scale-[1.08]  p-6 transition-all ease-in-out duration-500  "
+              />
+            </div>
+            <p className="text-xs text-textColor mt-3 tracking-widest ">
+              WEB PLATFORM
+            </p>
+            <p>INVACTOR Web Platform</p>
+          </section>
+          <section>
+            <div className="border rounded-md border-green-500 shadow-md hover:bg-green-600 hover:bg-none transition-colors duration-500 ease-in-out  group cursor-pointer">
+              <Image
+                src="/thebagshop.png"
+                width={387}
+                height={250}
+                alt="Picture of the author"
+                className="hover:scale-[1.08]   p-6 transition-all ease-in-out duration-500 "
+              />
+            </div>
+            <p className="text-xs text-textColor mt-3 tracking-widest ">
+              WEB & MOBILE PLATFORM
+            </p>
+            <p>THEBAGSHOPGH DASHBOARD</p>
+          </section>
+        </div>
+        {/* <div className="grid  px-[10px] md:px-0 bg-gradient-service grid-cols-1 md:grid-cols-2  lg:grid-cols-3   gap-4  md:mt-20 ">
           <section className="flex group md:block gap-2 flex-col items-center justify-center">
             <div className="border border-green-500 rounded-md relative w-[95%]  min-h-[300px] group-hover:bg-green-600 hover:bg-none  p-3   transition-colors duration-500 ease-in-out  group cursor-pointer ">
               <Image
@@ -101,7 +148,7 @@ const SmallZigzagContent = () => {
             </p>
             <p>THEBAGSHOPGH DASHBOARD</p>
           </section>
-        </div>
+        </div> */}
         <Button
           variant="text"
           endIcon={<ArrowRightAltIcon />}
