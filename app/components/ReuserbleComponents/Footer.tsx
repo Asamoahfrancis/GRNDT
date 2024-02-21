@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="w-full bg-black">
-      <div className="  max-w-[1444px] mx-auto   text-textColor ">
+      <div className="  max-w-[1444px] mx-auto   text-gray-400 ">
         <section className="grid grid-cols-1 md:grid-cols-4 md:px-[50px] px-[20px] py-6 text-base md:text-sm gap-6">
           <div>
             <p className="text-white">WE ARE GRNDT</p>

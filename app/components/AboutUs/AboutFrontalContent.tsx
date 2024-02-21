@@ -13,7 +13,7 @@ const AboutFrontalContent = ({ data }: { data: string }) => {
         quality={100}
         fill
         style={{
-          objectFit: "cover",
+          objectFit: "contain",
         }}
       />
     </div>

@@ -54,7 +54,7 @@ const ServicesSection = () => {
             Explore Our Services
           </p>
         </div>
-        <div className=" grid grid-col-1 md:grid-cols-2  lg:grid-cols-4 gap-4  text-base ">
+        <div className=" grid grid-cols-1 sm:grid-cols-2  gap-4  place-items-center lg:grid-cols-4  text-base ">
           {serviceData.map((service: any) => (
             <ServiceCard
               key={service.id}

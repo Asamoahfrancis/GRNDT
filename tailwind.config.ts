@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      objectPosition: {
+        "center-bottom": "center bottom",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-green": "linear-gradient(90deg, #19A94A 0%, #80C674 67.27%)",

@@ -48,7 +48,7 @@ const SmallZigzagContent = () => {
 
         <div className="grid  grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3 gap-4 md:mt-20 px-[10px] md:px-0">
           <section>
-            <div className="border rounded-md border-green-500 shadow-md hover:bg-green-600 hover:bg-none transition-colors duration-500 ease-in-out  group cursor-pointer">
+            <div className="border rounded-md border-green-500  hover:bg-green-600 hover:bg-none transition-colors duration-500 ease-in-out  group cursor-pointer">
               <Image
                 src="/vau.png"
                 width={387}
@@ -63,7 +63,7 @@ const SmallZigzagContent = () => {
             <p>KNVAS Work Experience Platform</p>
           </section>
           <section>
-            <div className="border rounded-md border-green-500 shadow-md hover:bg-green-600 hover:bg-none transition-colors duration-500 ease-in-out  group cursor-pointer">
+            <div className="border rounded-md border-green-500  hover:bg-green-600 hover:bg-none transition-colors duration-500 ease-in-out  group cursor-pointer">
               <Image
                 src="/black.png"
                 width={387}
@@ -78,7 +78,7 @@ const SmallZigzagContent = () => {
             <p>INVACTOR Web Platform</p>
           </section>
           <section>
-            <div className="border rounded-md border-green-500 shadow-md hover:bg-green-600 hover:bg-none transition-colors duration-500 ease-in-out  group cursor-pointer">
+            <div className="border rounded-md border-green-500  hover:bg-green-600 hover:bg-none transition-colors duration-500 ease-in-out  group cursor-pointer">
               <Image
                 src="/thebagshop.png"
                 width={387}

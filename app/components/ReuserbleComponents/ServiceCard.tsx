@@ -15,9 +15,9 @@ const ServiceCard = ({
   links: string;
 }) => {
   return (
-    <section className="  bg-gradient-service hover:bg-green-600 hover:bg-none  p-3   transition-colors duration-500 ease-in-out  group cursor-pointer rounded-md flex justify-center items-center">
-      <div className=" text-textColor  w-[95%] h-full  flex flex-col  py-10 px-4 bg-white shadow-md rounded-md group-hover:bg-white group-hover:scale-y-105 group-hover:scale-x-110 transition-all ease-in-out duration-500 ">
-        <div className="flex group-hover:scale-110 transition-all ease-in-out duration-500 mb-4 justify-center ">
+    <section className="  bg-gradient-service hover:bg-green-600 hover:bg-none  w-[285px] h-[373px]  transition-colors duration-500 ease-in-out   group cursor-pointer rounded-md flex justify-center items-center">
+      <div className=" text-textColor py-6 flex flex-col justify-between items-center w-[245px] h-[333px] bg-white  rounded-md group-hover:bg-white group-hover:w-[275px] group-hover:h-[363px] transition-all ease-in-out duration-500 ">
+        <div className="flex group-hover:scale-110 transition-all ease-in-out duration-500 items-center justify-center ">
           <Image
             src={logo}
             width={50}
@@ -26,7 +26,9 @@ const ServiceCard = ({
           />
         </div>
         <p className="text-lightRadientGreen">{title}</p>
-        <p className="mb-auto mt-4 pb-2">{data}</p>
+        <p className=" pb-2   max-w-[240px]  grid place-items-center   overflow-hidden ">
+          {data}
+        </p>
         <div>
           <Button
             variant="text"
